@@ -1,0 +1,26 @@
+#github {
+  &:hover {
+    transform: scale(1.5);
+    >path {
+      fill: #4479C5;
+    }
+  }
+}
+
+#mail {
+  &:hover {
+    transform: scale(1.5);
+    >path {
+      fill: #FFCE08;
+    }
+  }
+}
+
+#linkedin {
+  &:hover {
+    transform: scale(1.5);
+    >path {
+      fill: #086BC9;
+    }
+  }
+}
