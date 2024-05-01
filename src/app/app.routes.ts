@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 export const routes: Routes = [
-  { path: '', component: AboveTheFoldComponent},
+  { path: '', component: LandingpageComponent},
 ];
