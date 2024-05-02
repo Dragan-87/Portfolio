@@ -116,11 +116,7 @@
     &:hover {
       color: $primary-font-color;
     }
-    >img {
-      width: 40px;
-      &:hover {
-        transform: scale(1.2);
-      }
+    > svg {
     }
   }
 }

@@ -9,6 +9,7 @@ $primary-font-color: #fff;
 $h2-font-size: 44px;
 $headline-font-size: 90px;
 $nav-bar-height: 111px;
+$normal-font-size: 16px;
 
 @mixin buttonStyle($color,$hover, $font-color: white) {
   background-color: $color;
@@ -140,5 +141,6 @@ body {
   box-sizing: border-box;
   background-color: $background;
   color: $primary-font-color;
-
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }

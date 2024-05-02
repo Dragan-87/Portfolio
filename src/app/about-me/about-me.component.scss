@@ -1,8 +1,35 @@
 @use '../../styles.scss' as *;
 
+.wrapper {
+  padding: 0 100px;
+
+  >.about-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 400px;
+    >span {
+      font-size: $headline-font-size;
+    }
+  }
+}
 
 .about-me-content {
-  > h2 {
-    font-size: $headline-font-size;
+  font-size: $normal-font-size;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  >.personal-section {
+    display: flex;
+    gap: 32px;
+    > img {
+      width: 50px;
+      height: 50px;
+      align-self: center;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }
