@@ -1,7 +1,7 @@
 @use '../../styles.scss' as *;
 
 .atf {
-  height: calc(90vh - $nav-bar-height);
+  height: calc(100vh - $nav-bar-height);
   padding: 0 100px;
 }
 
