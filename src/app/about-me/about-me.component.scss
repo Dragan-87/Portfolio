@@ -1,0 +1,8 @@
+@use '../../styles.scss' as *;
+
+
+.about-me-content {
+  > h2 {
+    font-size: $headline-font-size;
+  }
+}
