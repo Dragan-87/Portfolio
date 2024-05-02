@@ -3,6 +3,7 @@
 .atf {
   height: calc(100vh - $nav-bar-height);
   padding: 0 100px;
+  position: relative;
   > .corner-shadow {
     position: absolute;
     bottom: -529px;
@@ -12,19 +13,15 @@
 }
 
 .img-container {
-  position: relative;
-
+  position: absolute;
+  bottom: calc(100% - 100px);
   >img {
     position: absolute;
-    left: -40px;
-    top: 22px;
-
   }
 
   >img:nth-child(2) {
+    position: absolute;
     z-index: -1;
-    top: 73px;
-    left: -165px;
   }
 }
 
@@ -34,9 +31,9 @@
   justify-content: right;
   align-items: center;
   width: 600px;
-  position: relative;
-  top: 187px;
-  left: calc(100% - 578px);
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(100% - 700px);
   flex-wrap: nowrap;
   z-index: 2;
 }
