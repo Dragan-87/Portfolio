@@ -10,8 +10,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SvgIconComponent {
   @Input() class= '';
-  @Input() path!: string;
+  @Input() path!: string[];
   @Input() id!: string;
+  @Input() width!: string;
+  @Input() height!: string;
 
 
 }

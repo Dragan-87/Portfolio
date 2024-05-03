@@ -3,7 +3,7 @@
 .my-skills {
   padding: 100px 100px;
   display: flex;
-  flex-direction: column;
+
   gap: 15%;
 
 }
@@ -25,4 +25,22 @@
   @include buttonStyle($primary, $tertiary);
   font-size: 23px;
   width: 200px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  width: 721px;
+  align-items: center;
+  gap: 10%;
+
+}
+
+.tech-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
