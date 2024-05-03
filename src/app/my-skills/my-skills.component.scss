@@ -1,0 +1,6 @@
+@use '../../styles.scss' as *;
+
+.skills-btn {
+  @include buttonStyle($primary, $tertiary);
+  font-size: 23px;
+}

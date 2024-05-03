@@ -23,7 +23,7 @@
     <div class="social-media">
       @for(count of socialMedia; track count; ) {
       <a href="{{count.link}}" target="_blank">
-        <app-svg-icon [path]="count.path" [id]="count.id"></app-svg-icon>
+        <app-svg-icon [class]="'small-icon'" [path]="count.path" [id]="count.id"></app-svg-icon>
       </a>
       }
       <a href="#email">Dragansaric&#64;gmx.de</a>
@@ -37,6 +37,6 @@
     </a>
   </div>
 
-  <!-- <img class="corner-shadow" src="assets/img/blurred colors/Purple shadow 1.png" alt=""> -->
+  <img class="corner-shadow" src="assets/img/blurred colors/Purple shadow 1.png" alt="">
 
 </div>

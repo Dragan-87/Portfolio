@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './svg-icon.component.scss'
 })
 export class SvgIconComponent {
+  @Input() class= '';
   @Input() path!: string;
   @Input() id!: string;
 

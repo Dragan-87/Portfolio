@@ -7,10 +7,10 @@
 
   >.corner-shadow {
     position: absolute;
-    bottom: -529px;
-    right: -429px;
-
+    bottom: -490px;
+    left: 861px;
   }
+
 }
 
 .img-container {
@@ -71,7 +71,7 @@
 
 .talk-btn {
   @include buttonStyle($primary, $tertiary);
-  width: 150px;
+  font-size: 23px;
   margin-top: 44px;
 
   &:hover {
@@ -141,6 +141,7 @@
   bottom: 150px;
   z-index: 4;
   font-size: 23px;
+
   >a {
     color: $primary-font-color;
     text-decoration: none;
