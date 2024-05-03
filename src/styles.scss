@@ -11,6 +11,16 @@ $headline-font-size: 90px;
 $nav-bar-height: 111px;
 $normal-font-size: 16px;
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background;
+  color: $primary-font-color;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 @mixin buttonStyle($color,$hover, $font-color: white) {
   background-color: $color;
   color: $font-color;
@@ -133,15 +143,4 @@ $normal-font-size: 16px;
 
 .pointer {
   cursor: pointer;
-}
-
-body {
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: $background;
-  color: $primary-font-color;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }

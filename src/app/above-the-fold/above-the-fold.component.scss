@@ -1,6 +1,7 @@
 @use '../../styles.scss' as *;
 
 .atf {
+
   height: 100vh;
   padding: 0 100px;
   position: relative;
@@ -8,7 +9,7 @@
   >.corner-shadow {
     position: absolute;
     bottom: -490px;
-    left: 861px;
+    left: calc(100% - 788px);
   }
 
 }
