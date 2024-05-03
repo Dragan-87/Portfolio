@@ -1,6 +1,28 @@
 @use '../../styles.scss' as *;
 
+.my-skills {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+
+}
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  > span:first-child {
+    font-size: $h2-font-size;
+  }
+  > span:nth-child(2) {
+    text-align: right;
+  }
+}
+
 .skills-btn {
   @include buttonStyle($primary, $tertiary);
   font-size: 23px;
+  width: 200px;
 }

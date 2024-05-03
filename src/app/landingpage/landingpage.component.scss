@@ -1,3 +1,5 @@
+@use '../../styles.scss' as *;
+
 .soft-scroll {
   scroll-behavior: smooth;
 }
