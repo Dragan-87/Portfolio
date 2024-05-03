@@ -5,7 +5,7 @@
   padding: 100px 100px;
   display: flex;
   justify-content: space-between;
-  gap: 15%;
+
  > img {
   position: absolute;
   bottom: 0px;
@@ -52,12 +52,12 @@
 }
 
 .tech-stack {
+  width: 751px;
   display: flex;
   flex-wrap: wrap;
-  width: 721px;
   align-items: center;
   row-gap: 48px;
-  column-gap: 87px;
+  column-gap: 123px;
 
 }
 
