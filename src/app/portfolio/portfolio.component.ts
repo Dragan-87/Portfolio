@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectCardComponent],
+  imports: [ProjectCardComponent, ReactiveFormsModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+
 
   projects = [
     {

@@ -1,18 +1,18 @@
-<div class="card">
+<div [ngClass]="{'flexReverse': evenOrOdd(),'marginLeft': evenOrOdd()}" class="card">
   <div class="project-img">
     <img src="assets/img/project-img/{{projectImg}}.png" alt="" srcset="">
   </div>
   <div class="project-description">
-    <span>
+    <span [ngClass]="{'alingSelfEnd': evenOrOdd()}">
       {{projectTitle}}
     </span>
-    <span>
+    <span [ngClass]="{'alingSelfEnd': evenOrOdd()}">
       {{techStack}}
     </span>
-    <span>
+    <span [ngClass]="{'textAlingRight': evenOrOdd()}">
       {{projectDescription}}
     </span>
-    <div class="button-section">
+    <div [ngClass]="{'justifyRight': evenOrOdd()}" class="button-section">
       <button>Live test</button>
       <button>Github</button>
     </div>

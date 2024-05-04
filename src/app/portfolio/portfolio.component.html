@@ -1,15 +1,18 @@
 <div class="portfolio-section">
   <div class="headline-section">
-      <div class="headline">
-        <div class="underlineSmall"></div>
-        <span>Portfolio</span>
-        <div class="underlineBig"></div>
-      </div>
-      <span class="section-description">Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+    <div class="headline">
+      <div class="underlineSmall"></div>
+      <span>Portfolio</span>
+      <div class="underlineBig"></div>
+    </div>
+    <span class="section-description">Explore a selection of my work here - Interact with projects to see my skills in
+      action.</span>
   </div>
   <div class="wrapper">
-    @for(project of projects; track project.projectTitle){
-      <app-project-card [projectImg]="project.projectImg" [projectTitle]="project.projectTitle" [techStack]="project.techStack" [projectDescription]="project.projectDescription" ></app-project-card>
+    @for(project of projects; track project.projectTitle; let index= $index){
+      <app-project-card [index]="index" [projectImg]="project.projectImg" [projectTitle]="project.projectTitle"
+        [techStack]="project.techStack" [projectDescription]="project.projectDescription"></app-project-card>
+
 
     }
   </div>
