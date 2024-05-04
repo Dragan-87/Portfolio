@@ -71,7 +71,7 @@
 }
 
 .talk-btn {
-  @include buttonStyle($primary, $tertiary);
+  @include buttonStyle($primary, $tertiary, $primary-font-color, $primary);
   font-size: 23px;
   margin-top: 44px;
 

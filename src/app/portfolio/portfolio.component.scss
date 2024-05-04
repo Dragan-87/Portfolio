@@ -1,14 +1,15 @@
 @use '../../styles.scss' as *;
 
 .portfolio-section {
+  padding: 0px 0px 0px 100px;
   display: flex;
   flex-direction: column;
   position: relative;
   > .headline-section {
-    position: absolute;
-    right: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     > .headline {
       display: flex;
       align-items: center;
@@ -26,8 +27,14 @@
       }
     }
     > .section-description {
+      width: 986px;
       font-size: $normal-font-size;
-      align-self: flex-start;
+      align-self: flex-end;
     }
   }
+}
+
+.wrapper {
+  margin-top: 116px;
+  padding-right: 100px;
 }
