@@ -1,0 +1,33 @@
+@use '../../styles.scss' as *;
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  > .headline-section {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    > .headline {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      > .underlineSmall {
+        border-bottom: 3px solid $tertiary;
+        width: 109px;
+      }
+      > .underlineBig {
+        border-bottom: 3px solid $tertiary;
+        width: 448px;
+      }
+      >span {
+        font-size: $headline-font-size;
+      }
+    }
+    > .section-description {
+      font-size: $normal-font-size;
+      align-self: flex-start;
+    }
+  }
+}
