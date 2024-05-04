@@ -1,5 +1,9 @@
 @use '../../styles.scss' as *;
 
+.screen-cap {
+  max-width: 1440px;
+}
+
 .soft-scroll {
   scroll-behavior: smooth;
 }
