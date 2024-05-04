@@ -1,3 +1,5 @@
+@use '../../styles.scss' as *;
+
 #github {
   &:hover {
     transform: scale(1.5);
@@ -42,12 +44,15 @@
   height: 60px;
 }
 
-
+svg {
+  &:hover {
+    transform: translateY(-15px) scale(1.2);
+    transition: all 0.125s;
+  }
+}
 
 #angular {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #D6002F;
     }
@@ -56,18 +61,17 @@
 
 #typescript {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #2F74C0;
     }
+
   }
+
 }
+
 
 #javascript {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #F7E025;
     }
@@ -76,8 +80,6 @@
 
 #javascript {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #F7E025;
     }
@@ -86,8 +88,6 @@
 
 #html {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #E5532D;
     }
@@ -96,8 +96,6 @@
 
 #firebase {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path:first-child {
       fill: #FFCD32;
     }
@@ -106,8 +104,6 @@
 
 #git {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #F05539;
     }
@@ -116,8 +112,6 @@
 
 #css {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #2D53E5;
     }
@@ -126,8 +120,6 @@
 
 #rest-api {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #095DA0;
     }
@@ -136,8 +128,6 @@
 
 #scrum {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #0A71BC;
     }
@@ -146,8 +136,6 @@
 
 #material-ui {
   &:hover {
-    transform: translateY(-15px) scale(1.2);
-
     >path {
       fill: #0081CB;
     }
