@@ -52,6 +52,14 @@
         }
       }
 
+
+      > textarea {
+        &::-webkit-resizer {
+          
+        }
+
+      }
+
       >button {
         display: flex;
         justify-content: flex-end;
