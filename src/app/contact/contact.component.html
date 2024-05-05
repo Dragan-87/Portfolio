@@ -17,10 +17,10 @@
 
     <form (ngSubmit)="submitData()" #f="ngForm">
       <input class="form-control" type="text" id="name" ngModel name="name" required>
-      <input type="text" id="email" ngModel name="email" required>
-      <textarea id="message" ngModel name="message" required></textarea>
+      <input class="form-control" type="text" id="email" ngModel name="email" required>
+      <textarea class="form-control" id="message" ngModel name="message" required></textarea>
       <div>
-        <input type="checkbox" ngModel name="privacy-policy" id="privacy-policy" required>
+        <input class="form-control" type="checkbox" ngModel name="privacy-policy" id="privacy-policy" required>
         <span>I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.</span>
       </div>
       <button type="submit">Send message :)</button>
