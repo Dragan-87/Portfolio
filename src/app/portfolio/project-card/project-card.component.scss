@@ -71,7 +71,7 @@
   margin-top: 35px;
   gap: 80px;
   > button:first-child {
-  @include buttonStyle($tertiary, $primary, $primary-font-color, $tertiary);  }
+    @include buttonStyle($tertiary, $primary, $primary-font-color, $tertiary);  }
   > button:last-child {
     @include buttonStyle($background, $primary , $primary, $primary);
   }
