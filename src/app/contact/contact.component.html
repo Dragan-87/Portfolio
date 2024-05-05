@@ -11,7 +11,12 @@
     <span>Need a Frontend developer? Contact me!</span>
   </div>
 
-
-  <input type="text" id="name" [(ngModel)]="name">
+    <form >
+      <input type="text" id="name" [(ngModel)]="name" name="name" required>
+      <input type="text" id="email" [(ngModel)]="name" name="email" required>
+      <input type="text" id="message" [(ngModel)]="name" name="message" required>
+      <input type="checkbox" name="privacy-policy" id=" privacy-policy" required>
+      <button disabled>Send message :)</button>
+    </form>
 
 </div>
