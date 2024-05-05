@@ -19,5 +19,6 @@ import { ContactComponent } from '../contact/contact.component';
   styleUrl: './landingpage.component.scss'
 })
 export class LandingpageComponent {
+  
 
 }
