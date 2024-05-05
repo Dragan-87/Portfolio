@@ -12,8 +12,6 @@
     @for(project of projects; track project.projectTitle; let index= $index){
       <app-project-card [index]="index" [projectImg]="project.projectImg" [projectTitle]="project.projectTitle"
         [techStack]="project.techStack" [projectDescription]="project.projectDescription"></app-project-card>
-
-
     }
   </div>
 </div>

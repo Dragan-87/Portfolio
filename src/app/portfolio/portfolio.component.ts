@@ -23,7 +23,7 @@ export class PortfolioComponent {
       projectImg: 'el-pollo-loco',
       projectTitle: 'El Pollo Loco',
       techStack: 'JavaScript | HTML | CSS',
-      projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'
+      projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.'
     },
 
   ];
