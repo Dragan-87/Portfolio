@@ -1,30 +1,32 @@
 <div class="wrapper" id="contact">
-  <div>
-    <div class="contact-container">
-      <span>Contact</span>
-      <div class="contact-headline">
-        <div class="underlineSmall"></div>
-      </div>
-      <div class="contact-section">
-        <span>Got a problem to solve?</span>
-        <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
-          your
-          projects
-          with my work.</span>
-        <span>Need a Frontend developer? Contact me!</span>
-      </div>
+  <div class="contact-container">
+    <span>Contact</span>
+    <div class="contact-headline">
+      <div class="underlineSmall"></div>
     </div>
+    <div class="contact-section">
+      <span>Got a problem to solve?</span>
+      <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
+        your
+        projects
+        with my work.</span>
+      <span>Need a Frontend developer? Contact me!</span>
+    </div>
+  </div>
 
+  <div class="form-container">
     <form [formGroup]="contactObj">
-      <input class="form-control" type="text"  formControlName="name" required>
-      <input class="form-control" type="text"  formControlName="email" required>
-      <textarea class="form-control" id="message"  formControlName="message" required></textarea>
+      <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" class="form-control" type="text" formControlName="name" required>
+      <span class="invalid" *ngIf="isNameInvalid()">Your name is required</span>
+      <input [ngClass]="{'is-invalid': isEmailInvalid()}" class="form-control" type="text" formControlName="email" required>
+      <span class="invalid" *ngIf="isEmailInvalid()">Your email is required</span>
+      <textarea [ngClass]="{'is-invalid': isMessageInvalid(), }" class="form-control"  id="message" formControlName="message" required></textarea>
+      <span class="invalid" *ngIf="isMessageInvalid()">Your message is required</span>
       <div>
-        <input class="form-control" type="checkbox"  formControlName="privacyPolicy" required>
+        <input class="form-control" type="checkbox" formControlName="privacyPolicy" required>
         <span>I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.</span>
       </div>
       <button (click)="submitData()" type="submit" [disabled]="!contactObj.valid">Send message :)</button>
     </form>
-
   </div>
 </div>

@@ -3,10 +3,15 @@
 .wrapper {
   height: 50vh;
   display: flex;
-  > div {
+
+  >div:first-child {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 0 0 100px;
+
     >.contact-container {
+      display: flex;
+      flex-direction: column;
+
       >.contact-headline {
         display: flex;
       }
@@ -17,15 +22,54 @@
 
       }
     }
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 100px 0 0;
 
     >form {
       display: flex;
       flex-direction: column;
-      width: 40%;
+      width: 100%;
+
+      >input,
+      textarea {
+        background-color: $background;
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid $tertiary;
+        border-radius: 5px;
+        color: $primary-font-color;
+
+        &:focus,
+        &:hover,
+        &:active,
+        &:visited {
+          border: 2px solid $primary !important;
+        }
+      }
+
+      >button {
+        display: flex;
+        justify-content: flex-end;
+        @include buttonStyle($primary, $tertiary);
+
+      }
     }
   }
 }
 
 .is-invalid {
-  border: 1px solid red;
+  border: 2px solid red !important;
+}
+
+.invalid {
+  color: red  !important;
+}
+
+.is-valid {
+  border: 2px solid $primary !important;
 }

@@ -21,12 +21,35 @@ export class ContactComponent {
     privacyPolicy: new FormControl(false, [Validators.requiredTrue])
   });
 
-  messageForm!: FormGroup;
-
   constructor() {
 
   }
 
   submitData() {
+    this.contactObj.reset();
+  }
+
+  isEmailInvalid() {
+    return this.contactObj.controls['email'].invalid && (this.contactObj.controls['email'].touched || this.contactObj.controls['email'].dirty);
+  }
+
+  isNameInvalid() {
+    return this.contactObj.controls['name'].invalid && (this.contactObj.controls['name'].touched || this.contactObj.controls['name'].dirty);
+  }
+
+  isMessageInvalid() {
+    return this.contactObj.controls['message'].invalid && (this.contactObj.controls['message'].touched || this.contactObj.controls['message'].dirty);
+  }
+
+  isEmailValidAndTouched() {
+    return this.contactObj.controls['email'].valid && (this.contactObj.controls['email'].touched || this.contactObj.controls['email'].dirty);
+  }
+
+  isNameValidAndTouched() {
+    return this.contactObj.controls['name'].valid && (this.contactObj.controls['name'].touched || this.contactObj.controls['name'].dirty);
+  }
+  
+  isMessageValidAndTouched() {
+    return this.contactObj.controls['message'].valid && (this.contactObj.controls['message'].touched || this.contactObj.controls['message'].dirty);
   }
 }
