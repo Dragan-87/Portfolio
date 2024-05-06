@@ -1,9 +1,17 @@
 @use '../../styles.scss' as *;
 
 .wrapper {
-  height: 50vh;
+  height: 100vh;
   display: flex;
   gap: 150px;
+  position: relative;
+
+  > .contact-container {
+    > span {
+      font-size: $headline-font-size;
+    }
+  }
+
 
   >div:first-child {
     width: 100%;
@@ -98,6 +106,12 @@
 
       }
     }
+  }
+  > img:last-child {
+    position: absolute;
+    z-index: -1;
+    width: 453px;
+    bottom: 0;
   }
 }
 

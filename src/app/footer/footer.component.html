@@ -1,1 +1,17 @@
-<p>footer works!</p>
+<footer>
+  <div>
+    <span>Dragan</span>
+    <a href="">Imprint</a>
+  </div>
+  <div>
+    <span>&#169; Dragan Saric 2024</span>
+  </div>
+  <div>
+    @for(count of socialMedia; track count; ) {
+    <a href="{{count.link}}" target="_blank">
+      <app-svg-icon [class]="'small-icon'" [width]="'42'" [height]="'41'" [path]="count.path"
+        [id]="count.id"></app-svg-icon>
+    </a>
+    }
+  </div>
+</footer>

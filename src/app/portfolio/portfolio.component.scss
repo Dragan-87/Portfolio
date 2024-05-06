@@ -32,15 +32,26 @@
       align-self: flex-end;
     }
   }
-  > img {
-    position: absolute;
-    z-index: -1;
-    transform: rotate(180deg);
-    left: -40px;
-    bottom: 20%;
-    height: 748px;
-    width: 648px;
-  }
+}
+
+.prup-blur {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  left: -40px;
+  bottom: 20%;
+  height: 748px;
+  width: 648px;
+}
+
+.green-blur {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  right: 0;
+  bottom: 0;
+  height: 928px;
+  width: 428px;
 }
 
 .wrapper {
