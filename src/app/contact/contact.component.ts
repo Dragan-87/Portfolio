@@ -26,8 +26,11 @@ export class ContactComponent {
   }
 
   submitData() {
+    const contacValueJSON = JSON.stringify(this.contactObj.value);
     this.contactObj.reset();
   }
+
+
 
   isEmailInvalid() {
     return this.contactObj.controls['email'].invalid && (this.contactObj.controls['email'].touched || this.contactObj.controls['email'].dirty);
@@ -56,7 +59,7 @@ export class ContactComponent {
   isMessageValidAndTouched() {
     return this.contactObj.controls['message'].valid && (this.contactObj.controls['message'].touched || this.contactObj.controls['message'].dirty);
   }
-  
+
   isPrivacyPolicyValidAndTouched() {
     return this.contactObj.controls['privacyPolicy'].valid && (this.contactObj.controls['privacyPolicy'].touched || this.contactObj.controls['privacyPolicy'].dirty);
   }
