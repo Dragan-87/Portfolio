@@ -46,9 +46,7 @@
         color: $primary-font-color;
 
         &:focus,
-        &:hover,
-        &:active,
-        &:visited {
+        &:hover {
           border: 2px solid $primary !important;
         }
       }
