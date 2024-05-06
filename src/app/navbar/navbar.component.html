@@ -1,0 +1,10 @@
+<header>
+  <nav>
+    <span class="pointer name">Dragan</span>
+    <div>
+      <a (click)="setAboutMetoTrue()" [ngClass]="aboutMe? 'active' : ''" href="#about-me">About me</a>
+      <a (click)="setSkillsToTrue()" [ngClass]="skills? 'active' : ''" href="#skills">Skills</a>
+      <a (click)="setPortfolioToTrue()" [ngClass]="portfolio? 'active' : ''" href="#portfolio">Portfolio</a>
+    </div>
+  </nav>
+</header>

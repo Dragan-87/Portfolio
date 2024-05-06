@@ -1,0 +1,47 @@
+@use '../../styles.scss' as *;
+
+
+a {
+  text-decoration: none;
+  color: $primary-font-color;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: $background;
+  z-index: 1000;
+
+  >nav {
+    padding: 37px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    >div {
+      display: flex;
+      gap: 29px;
+
+      >a {
+        font-size: 23px;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.name {
+  font-size: 32px !important;
+}
+
+.active {
+  color: $primary;
+  border-bottom: 2px solid $tertiary;
+}
