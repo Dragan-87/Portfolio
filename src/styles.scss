@@ -23,7 +23,7 @@ body {
 }
 
 @mixin buttonStyle($color, $hover, $font-color: white, $borderColor: transparent) {
-  cursor: pointer;
+  cursor: pointer !important;
   background-color: $color;
   color: $font-color;
   border: 1px solid $borderColor;

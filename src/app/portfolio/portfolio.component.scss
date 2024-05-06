@@ -32,6 +32,15 @@
       align-self: flex-end;
     }
   }
+  > img {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+    left: -40px;
+    bottom: 20%;
+    height: 748px;
+    width: 648px;
+  }
 }
 
 .wrapper {
