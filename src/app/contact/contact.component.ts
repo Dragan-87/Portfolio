@@ -41,6 +41,10 @@ export class ContactComponent {
     return this.contactObj.controls['message'].invalid && (this.contactObj.controls['message'].touched || this.contactObj.controls['message'].dirty);
   }
 
+  isPrivacyPolicyInvalid() {
+    return this.contactObj.controls['privacyPolicy'].invalid && (this.contactObj.controls['privacyPolicy'].touched || this.contactObj.controls['privacyPolicy'].dirty);
+  }
+
   isEmailValidAndTouched() {
     return this.contactObj.controls['email'].valid && (this.contactObj.controls['email'].touched || this.contactObj.controls['email'].dirty);
   }
@@ -48,8 +52,12 @@ export class ContactComponent {
   isNameValidAndTouched() {
     return this.contactObj.controls['name'].valid && (this.contactObj.controls['name'].touched || this.contactObj.controls['name'].dirty);
   }
-  
+
   isMessageValidAndTouched() {
     return this.contactObj.controls['message'].valid && (this.contactObj.controls['message'].touched || this.contactObj.controls['message'].dirty);
+  }
+  
+  isPrivacyPolicyValidAndTouched() {
+    return this.contactObj.controls['privacyPolicy'].valid && (this.contactObj.controls['privacyPolicy'].touched || this.contactObj.controls['privacyPolicy'].dirty);
   }
 }

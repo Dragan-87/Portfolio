@@ -10,6 +10,7 @@ $h2-font-size: 44px;
 $headline-font-size: 90px;
 $nav-bar-height: 111px;
 $normal-font-size: 16px;
+$small-font-size: 14px;
 
 body {
   margin: 0;
@@ -17,7 +18,7 @@ body {
   box-sizing: border-box;
   background-color: $background;
   color: $primary-font-color;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   overflow-x: hidden;
 }
 

@@ -35,7 +35,8 @@
       flex-direction: column;
       width: 100%;
 
-      >input,
+      >input[type="text"],
+      >input[type="email"],
       textarea {
         background-color: $background;
         margin: 10px 0;
@@ -52,22 +53,62 @@
         }
       }
 
+      input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: #141D2F;
+        border: 2px solid #70E61C;
+        width: 20px;
+        height: 20px;
+        outline: none;
+        cursor: pointer;
+      }
 
-      > textarea {
-        &::-webkit-resizer {
-          
-        }
+      input[type="checkbox"]:checked {
+        border-color: #70E61C;
+      }
 
+      input[type="checkbox"]:checked::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 12px;
+        border: solid #70E61C;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        position: relative;
+        top: -1px;
+        left: 5px;
       }
 
       >button {
+        width: 200px;
         display: flex;
         justify-content: flex-end;
         @include buttonStyle($primary, $tertiary);
+        align-self: center;
 
       }
     }
   }
+}
+
+span {
+  font-size: $small-font-size;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  > div {
+    display: flex;
+    > span {
+      align-self: center;
+    }
+  }
+
 }
 
 .is-invalid {
@@ -75,9 +116,13 @@
 }
 
 .invalid {
-  color: red  !important;
+  color: red !important;
 }
 
 .is-valid {
   border: 2px solid $primary !important;
+}
+
+.colorTertiary {
+  color: $tertiary !important;
 }
