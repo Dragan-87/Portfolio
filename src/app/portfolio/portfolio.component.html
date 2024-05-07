@@ -11,7 +11,7 @@
   <div class="wrapper">
     @for(project of projects; track project.projectTitle; let index= $index){
       <app-project-card [index]="index" [projectImg]="project.projectImg" [projectTitle]="project.projectTitle"
-        [techStack]="project.techStack" [projectDescription]="project.projectDescription"></app-project-card>
+        [techStack]="project.techStack" [projectDescription]="project.projectDescription" [githubLink]="project.githubLink" [liveLink]="project.liveLink" ></app-project-card>
     }
   </div>
   <img class="prup-blur" src="assets/img/blurred colors/Purple shadow footer V2.png" alt="" srcset="">

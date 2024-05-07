@@ -17,13 +17,17 @@ export class PortfolioComponent {
       projectImg: 'join',
       projectTitle: 'Join',
       techStack: 'JavaScript | HTML | CSS',
-      projectDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. '
+      projectDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
+      githubLink: '',
+      liveLink: ''
     },
     {
       projectImg: 'el-pollo-loco',
       projectTitle: 'El Pollo Loco',
       techStack: 'JavaScript | HTML | CSS',
-      projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.'
+      projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.',
+      githubLink: 'https://github.com/Dragan-87/el-pollo-loco',
+      liveLink: ''
     },
 
   ];

@@ -17,6 +17,8 @@ export class ProjectCardComponent {
   @Input() projectTitle: string = '';
   @Input() techStack: string = '';
   @Input() projectDescription: string = '';
+  @Input() githubLink: string = '';
+  @Input() liveLink: string = '';
 
   evenOrOdd(): boolean {
     return this.index % 2 !== 0;
