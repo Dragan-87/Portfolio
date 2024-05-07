@@ -18,7 +18,7 @@ export class PortfolioComponent {
       projectTitle: 'Join',
       techStack: 'JavaScript | HTML | CSS',
       projectDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
-      githubLink: '',
+      githubLink: 'https://github.com/Dragan-87/join',
       liveLink: ''
     },
     {
@@ -27,7 +27,7 @@ export class PortfolioComponent {
       techStack: 'JavaScript | HTML | CSS',
       projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.',
       githubLink: 'https://github.com/Dragan-87/el-pollo-loco',
-      liveLink: ''
+      liveLink: 'https://dragan-saric.developerakademie.net/el-pollp-loco/index.html'
     },
 
   ];
