@@ -1,49 +1,53 @@
-<div class="wrapper" id="contact">
-  <div class="contact-container">
-    <div>
-      <div class="underlineSmall"></div>
-      <span>Contact</span>
-  </div>
-    <div class="contact-section">
-      <span>Got a problem to solve?</span>
-      <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
-        your
-        projects
-        with my work.</span>
-      <span>Need a Frontend developer? <b>Contact me!</b></span>
-    </div>
+<div class="outer-container"id="contact">
+  <div class="headline-container">
+    <div class="underlineSmall"></div>
+    <span>Contact</span>
   </div>
 
-  <div class="form-container">
-    <form [formGroup]="contactObj">
-      <div>
-        <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" type="text"
-          formControlName="name" placeholder="Your name " required>
-        <span class="invalid" *ngIf="isNameInvalid()">Your name is required</span>
+  <div class="wrapper" >
+    <div class="contact-container">
+      <div class="contact-section">
+        <span>Got a problem to solve?</span>
+        <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
+          your
+          projects
+          with my work.</span>
+        <span>Need a Frontend developer? <b>Contact me!</b></span>
       </div>
-      <div>
-        <input [ngClass]="{'is-invalid': isEmailInvalid(),'is-valid': isEmailValidAndTouched()}" type="email"
-          formControlName="email" placeholder="Your email" required>
-        <span class="invalid" *ngIf="isEmailInvalid()">Your email is required</span>
-      </div>
-      <div>
-      <textarea [ngClass]="{'is-invalid': isMessageInvalid(),'is-valid': isMessageValidAndTouched()}" id="message"
-        formControlName="message" placeholder="Your message" required></textarea>
-      <span class="invalid" *ngIf="isMessageInvalid()">Your message is required</span>
-      </div>
-      <div class="checkbox-container">
+    </div>
+
+    <div class="form-container">
+      <form [formGroup]="contactObj">
         <div>
-          <input [ngClass]="{'is-valid': isNameValidAndTouched()}" type="checkbox" formControlName="privacyPolicy"
-            required>
-          <span>I've read the <span calss="colorTertiary">privacy policy</span> and agree to the processing of my data
-            as
-            outlined.</span>
+          <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" type="text"
+            formControlName="name" placeholder="Your name " required>
+          <span class="invalid" *ngIf="isNameInvalid()">Your name is required</span>
         </div>
-        <span class="invalid" *ngIf="isPrivacyPolicyInvalid()">Please accept the privacy policy</span>
-      </div>
-      <button class="sub-btn" (click)="submitData()" type="submit" [disabled]="contactObj.invalid">Send message
-        :)</button>
-    </form>
+        <div>
+          <input [ngClass]="{'is-invalid': isEmailInvalid(),'is-valid': isEmailValidAndTouched()}" type="email"
+            formControlName="email" placeholder="Your email" required>
+          <span class="invalid" *ngIf="isEmailInvalid()">Your email is required</span>
+        </div>
+        <div>
+          <textarea [ngClass]="{'is-invalid': isMessageInvalid(),'is-valid': isMessageValidAndTouched()}" id="message"
+            formControlName="message" placeholder="Your message" required></textarea>
+          <span class="invalid" *ngIf="isMessageInvalid()">Your message is required</span>
+        </div>
+        <div class="checkbox-container">
+          <div>
+            <input [ngClass]="{'is-valid': isNameValidAndTouched()}" type="checkbox" formControlName="privacyPolicy"
+              required>
+            <span>I've read the <span calss="colorTertiary">privacy policy</span> and agree to the processing of my data
+              as
+              outlined.</span>
+          </div>
+          <span class="invalid" *ngIf="isPrivacyPolicyInvalid()">Please accept the privacy policy</span>
+        </div>
+        <button class="sub-btn" (click)="submitData()" type="submit" [disabled]="contactObj.invalid">Send message
+          :)</button>
+      </form>
+    </div>
+    <img src="assets/img/blurred colors/Purple shadow 4.png" alt="" srcset="">
   </div>
-  <img src="assets/img/blurred colors/Purple shadow 4.png" alt="" srcset="">
+
 </div>
