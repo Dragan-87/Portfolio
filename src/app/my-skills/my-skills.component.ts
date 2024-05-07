@@ -8,7 +8,8 @@ import { SvgIconComponent } from '../svg-icon/svg-icon.component';
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
-export class MySkillsComponent {
+export class MySkillsComponent{
+
   techIcons = [
     {
       width: '55.8',

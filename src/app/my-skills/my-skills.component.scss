@@ -7,15 +7,16 @@
   justify-content: space-between;
   height: 100vh;
 
- > img {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 70%;
-  z-index: -1;
+  >img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 70%;
+    z-index: -1;
 
- }
+  }
 }
+
 .headline-section {
   display: flex;
   flex-direction: column;
@@ -23,42 +24,47 @@
   align-items: center;
   width: 570px;
 
-  > .headline{
+  >.headline {
     width: 100%;
     text-align: right;
     position: relative;
     display: flex;
     align-items: center;
-    > span {
+
+    >span {
       font-size: $headline-font-size;
       width: 100%;
     }
-    > .underline {
+
+    >.underline {
       width: 58px;
       border-bottom: 3px solid $tertiary;
       position: absolute;
       right: -100px;
     }
   }
-  > span:nth-child(2) {
+
+  >span:nth-child(2) {
     text-align: right;
   }
+
+  >.skills-btn {
+    @include buttonStyle($primary, $tertiary, $primary-font-color, $primary);
+    font-size: 23px;
+    margin-top: 57px;
+    text-decoration: none;
+  }
+
 }
 
-.skills-btn {
-  @include buttonStyle($primary, $tertiary, $primary-font-color, $primary);
-  font-size: 23px;
-  width: 200px;
-  margin-top: 57px;
-}
 
 .tech-stack {
-    width: 751px;
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: 48px;
-      column-gap: 123px;
-      align-content: center;
+  width: 751px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 123px;
+  align-content: center;
 
 }
 
@@ -66,6 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   >span {
     margin-top: 8px;
     width: 80px;

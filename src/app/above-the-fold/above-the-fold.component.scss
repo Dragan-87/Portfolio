@@ -74,7 +74,7 @@
   @include buttonStyle($primary, $tertiary, $primary-font-color, $primary);
   font-size: 23px;
   margin-top: 44px;
-
+  text-decoration: none;
   &:hover {
     transform: scale(1.2);
   }
