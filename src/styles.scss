@@ -12,14 +12,18 @@ $nav-bar-height: 111px;
 $normal-font-size: 16px;
 $small-font-size: 14px;
 
+html {
+  scroll-behavior: smooth;
+
+  background-color: $background;
+  color: $primary-font-color;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $background;
-  color: $primary-font-color;
-  scroll-behavior: smooth !important;
-  overflow-x: hidden;
 }
 
 @mixin buttonStyle($color, $hover, $font-color: white, $borderColor: transparent) {
@@ -43,6 +47,7 @@ body {
     border: 1px solid darken($hover, 10%);
     color: $primary-font-color;
   }
+
   &:disabled {
     cursor: not-allowed;
     background-color: gray;
