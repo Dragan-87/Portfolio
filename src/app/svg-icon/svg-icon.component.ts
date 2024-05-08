@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { SocialMediaService } from '../social-media.service';
 
 @Component({
   selector: 'app-svg-icon',
@@ -14,6 +15,11 @@ export class SvgIconComponent {
   @Input() id!: string;
   @Input() width!: string;
   @Input() height!: string;
+  @Input() clickFunction!: string;
+  socialMedia: any;
 
+  constructor(socialMedia: SocialMediaService) {
+    this.socialMedia = socialMedia.socialMedia;
+  }
 
 }

@@ -75,6 +75,7 @@
   font-size: 23px;
   margin-top: 44px;
   text-decoration: none;
+
   &:hover {
     transform: scale(1.2);
   }
@@ -134,7 +135,8 @@
   bottom: 150px;
   z-index: 4;
   font-size: 23px;
-  >a {
+
+  > a {
     color: $primary-font-color;
     text-decoration: none;
     display: flex;
@@ -151,20 +153,32 @@
   animation: wiggle 1s infinite;
 }
 
+
+
 @keyframes wiggle {
   0% {
     transform: rotate(90deg) translateX(0);
   }
+
   25% {
     transform: rotate(90deg) translateX(-10px);
   }
+
   50% {
     transform: rotate(90deg) translateX(0);
   }
+
   75% {
     transform: rotate(90deg) translateX(-10px);
   }
+
   100% {
     transform: rotate(90deg) translateX(0);
   }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -11,9 +11,7 @@
         <h2>FRONTEND DEVELOPER</h2>
       </div>
     </div>
-    <a class="talk-btn" href="#contact">
-        Let´s talk!
-    </a>
+    <button class="talk-btn" (click)="links.goToContact()">Let´s talk!</button>
   </div>
 
   <img class="separator" src="assets/img/separator/separator_1.png" alt="" srcset="">
@@ -23,11 +21,11 @@
 
     </div>
     <div class="social-media">
-      @for(count of socialMedia; track count; ) {
-      <a href="{{count.link}}" target="_blank">
-        <app-svg-icon [class]="'small-icon'" [width]="'42'" [height]="'41'" [path]="count.path"
+      @for(count of socialMedia; track count; let i = $index ) {
+      <div class="flex-center" (click)="count % 2 == 0? links.openLink(links.socialMediaLinks[i]) : links.goToContact()">
+        <app-svg-icon class="small-icon pointer" [width]="'42'" [height]="'41'" [path]="count.path"
           [id]="count.id"></app-svg-icon>
-      </a>
+      </div>
       }
       <a href="#email">Dragansaric&#64;gmx.de</a>
     </div>
