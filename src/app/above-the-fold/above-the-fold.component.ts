@@ -1,8 +1,8 @@
+import { LinkService } from './../link.service';
 import { SocialMediaService } from './../social-media.service';
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SvgIconComponent } from '../svg-icon/svg-icon.component';
-import { LinkService } from '../link.service';
 
 @Component({
   selector: 'app-above-the-fold',
@@ -20,7 +20,7 @@ export class AboveTheFoldComponent {
   links: any;
   constructor(socialMedia: SocialMediaService, links: LinkService) {
     this.socialMedia = socialMedia.socialMedia;
-
+    this.links = links;
   }
 
 }
