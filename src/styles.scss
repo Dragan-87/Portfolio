@@ -6,13 +6,14 @@ $tertiary: #9747FF;
 $background: #141D2F;
 $menu-background: #414856;
 $primary-font-color: #fff;
-$h2-font-size: 44px;
+$h2-font-size: 52px;
 $headline-font-size: 90px;
+$headline-font-size-l: 70px;
 $nav-bar-height: 111px;
 $normal-font-size: 16px;
 $small-font-size: 14px;
-$media-query-one: 1330px;
-$media-query-two: 1024px;
+$media-query-one: 1310px;
+$media-query-two: 1001px;
 $media-query-three: 900px;
 $media-query-four: 768px;
 $media-query-five: 600px;
@@ -179,6 +180,13 @@ body {
 .desktop-view {
   display: none !important;
 }
+
+
+@media (max-width: $media-query-one) {
+  $headline-font-size: 70px;
+  $h2-font-size: 36px;
+}
+
 
 @media (max-width: $media-query-two) {
   .desktop-view {
