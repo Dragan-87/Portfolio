@@ -41,7 +41,8 @@
 
 
       >.contact-headline {
-        display: flex;;
+        display: flex;
+        ;
       }
     }
 
@@ -84,7 +85,7 @@
 
         >input[type="text"],
         >input[type="email"],
-        textarea {
+        >textarea {
           background-color: $background;
           margin: 10px 0;
           padding: 15px 25px;
@@ -92,14 +93,17 @@
           border-radius: 5px;
           color: $primary-font-color;
           margin: 0;
+
           &:focus,
           &:hover {
             border: 1px solid $primary !important;
           }
 
           &::placeholder {
-            color: $primary-font-color;
+
+            color: $primary-font-color !important;
           }
+
         }
 
         textarea {

@@ -4,13 +4,21 @@ $primary: #70E61C;
 $secondary: #1CDAE6;
 $tertiary: #9747FF;
 $background: #141D2F;
-$menu-background: opacify(#141D2F, 0.8);
+$menu-background: #414856;
 $primary-font-color: #fff;
 $h2-font-size: 44px;
 $headline-font-size: 90px;
 $nav-bar-height: 111px;
 $normal-font-size: 16px;
 $small-font-size: 14px;
+$media-query-one: 1330px;
+$media-query-two: 1024px;
+$media-query-three: 900px;
+$media-query-four: 768px;
+$media-query-five: 600px;
+$media-query-six: 480px;
+
+
 
 html {
   scroll-behavior: smooth;
@@ -166,4 +174,18 @@ body {
 .flex-center {
   display: flex;
   align-items: center;
+}
+
+.desktop-view {
+  display: none !important;
+}
+
+@media (max-width: $media-query-two) {
+  .desktop-view {
+    display: block !important;
+  }
+
+  .mobile-view {
+    display: none !important;
+  }
 }

@@ -1,10 +1,25 @@
 <header>
   <nav>
     <span class="pointer name">Dragan</span>
-    <div>
+    <div class="mobile-view">
       <a (click)="setAboutMetoTrue()" [ngClass]="aboutMe? 'active' : ''" href="#about-me">About me</a>
       <a (click)="setSkillsToTrue()" [ngClass]="skills? 'active' : ''" href="#skills">Skills</a>
       <a (click)="setPortfolioToTrue()" [ngClass]="portfolio? 'active' : ''" href="#portfolio">Portfolio</a>
+    </div>
+    <div class="desktop-view pointer" (click)="openOrCloseBurgerMenu()">
+      @if(isBurgerOpen) {
+      <img src="../../assets/img/icons/menu-btn/close-btn.png" aria-label="burger menu">
+      <div class="burger-menu">
+        <div class="menu-container">
+          <a (click)="setAboutMetoTrue()" href="#about-me">About me</a>
+          <a (click)="setSkillsToTrue()"  href="#skills">Skills</a>
+          <a (click)="setPortfolioToTrue()" href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      } @else {
+      <img src="../../assets/img/icons/menu-btn/burger-menu.png" aria-label="burger menu">
+      }
     </div>
   </nav>
 </header>

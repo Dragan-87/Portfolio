@@ -13,6 +13,8 @@ export class NavbarComponent {
   aboutMe = false;
   skills = false;
   portfolio = false;
+  isBurgerOpen = false;
+
 
   ngOnChanges(changes: SimpleChanges): void {
     if (this.aboutMe) {
@@ -43,5 +45,9 @@ export class NavbarComponent {
     this.portfolio = true;
     this.aboutMe = false;
     this.skills = false;
+  }
+
+  openOrCloseBurgerMenu() {
+    this.isBurgerOpen = !this.isBurgerOpen;
   }
 }
