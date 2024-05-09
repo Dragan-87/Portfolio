@@ -236,5 +236,35 @@
       }
     }
   }
+}
 
+@media (max-width: 375px) {
+  .atf {
+    padding: 100px 20px;
+    >.img-container {
+      width: 300px;
+      top: calc(50% - 220px);
+      >img:last-child {
+        left: calc(50% - 200px);
+        width: 400px;
+      }
+    }
+
+    >.text-container {
+      top: 120px;
+      >.headline {
+        font-size: 30px;
+      }
+      >.job-title {
+        font-size: 20px;
+      }
+      >button {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
+    >.separator {
+      height: 200px;
+    }
+  }
 }
