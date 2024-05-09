@@ -1,0 +1,123 @@
+@use '../../styles.scss' as *;
+
+.atf {
+  height: calc(100svh - $nav-bar-height);
+  padding: 111px 100px 0 100px;
+  display: flex;
+  justify-content: space-between;
+
+  >.img-container {
+    position: relative;
+    width: 646px;
+
+    >img:first-child {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: inherit;
+    }
+
+    >img:last-child {
+      position: absolute;
+      z-index: -1;
+      left: calc(50% - 450px);
+      width: 900px;
+    }
+  }
+
+  >.text-container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+
+    >.vertical {
+      transform: rotate(270deg);
+      position: absolute;
+      top: 80px;
+      left: -120px;
+      font-size: 64px;
+    }
+
+    >.headline {
+      font-size: $headline-font-size;
+    }
+
+    >.job-title {
+      font-size: 60px;
+      color: $tertiary;
+    }
+
+    >button {
+      @include buttonStyle($primary, $tertiary);
+      margin-top: 50px;
+      font-size: 23px;
+      display: inline-block;
+      width: fit-content;
+      align-self: center;
+    }
+  }
+
+  >.separator {
+    position: absolute;
+    top: calc(50% - $nav-bar-height);
+    left: 0;
+    width: 100%;
+  }
+
+  >.social-media-container {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    >.underline {
+      border-bottom: 3px solid $tertiary;
+      width: 100px;
+    }
+
+    >a:last-child {
+      text-decoration: none;
+      color: $primary-font-color;
+      font-size: 23px;
+    }
+  }
+
+  .vertical-wiggle {
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    rotate: 90deg;
+    text-decoration: none;
+    color: $primary-font-color;
+    font-size: 23px;
+
+    >img {
+      rotate: 270deg;
+      align-self: center;
+      width: 26px;
+    }
+    animation: up-and-down 1s infinite;
+  }
+
+  @keyframes up-and-down {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-10px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+
+  }
+}

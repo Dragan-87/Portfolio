@@ -4,6 +4,7 @@ import { AboutMeComponent } from '../about-me/about-me.component';
 import { MySkillsComponent } from '../my-skills/my-skills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ContactComponent } from '../contact/contact.component';
+import { AtfComponent } from '../atf/atf.component';
 
 @Component({
   selector: 'app-landingpage',
@@ -13,12 +14,13 @@ import { ContactComponent } from '../contact/contact.component';
     AboutMeComponent,
     MySkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    AtfComponent
   ],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.scss'
 })
 export class LandingpageComponent {
-  
+
 
 }
