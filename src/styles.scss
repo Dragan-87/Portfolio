@@ -27,16 +27,17 @@ $media-query-eight: 390px;
 
 html {
   scroll-behavior: smooth;
-
   background-color: $background;
   color: $primary-font-color;
   overflow-x: hidden;
+  min-height: --webkit-fill-available;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: --webkit-fill-available
 }
 
 @mixin buttonStyle($color, $hover, $font-color: white, $borderColor: transparent) {

@@ -1,7 +1,7 @@
 @use '../../styles.scss' as *;
 
 .atf {
-  height: calc(100svh - $nav-bar-height);
+  height: calc(100vh - $nav-bar-height);
   padding: 111px 100px 0 100px;
   display: flex;
   justify-content: space-between;
@@ -173,7 +173,7 @@
 
 @media (max-width: 1001px) {
   .atf {
-    padding: 100px 50px;
+    padding: 100px 50px 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
