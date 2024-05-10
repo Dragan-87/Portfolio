@@ -37,3 +37,15 @@ footer {
     }
   }
 }
+
+@media (max-width: 1001px) {
+  footer {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    > div:nth-child(2) {
+    }
+  }
+}
