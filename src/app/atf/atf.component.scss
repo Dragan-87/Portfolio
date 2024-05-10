@@ -93,7 +93,7 @@
     z-index: 1;
     position: absolute;
     bottom: 10%;
-    right: 100px;
+    right: 30px;
     display: flex;
     align-items: center;
     rotate: 90deg;
@@ -131,7 +131,7 @@
 
     >.img-container {
       width: 500px;
-      top: calc(50% - 320px);
+      top: calc(50% - 250px);
     }
 
     .text-container {
@@ -158,7 +158,7 @@
   .atf {
     >.img-container {
       width: 400px;
-      top: calc(50% - 285px);
+      top: calc(50% - 265px);
 
       >img:last-child {
         left: calc(50% - 350px);
