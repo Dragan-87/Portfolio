@@ -5,10 +5,12 @@
   padding: 111px 100px 0 100px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   >.img-container {
     position: relative;
     width: 646px;
+    top: calc(50% - 320px);
 
     >img:first-child {
       position: absolute;
@@ -30,7 +32,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 100px;
+    top: calc(50% - 300px);
 
     >.vertical {
       transform: rotate(270deg);
@@ -61,9 +63,10 @@
 
   >.separator {
     position: absolute;
-    top: calc(50% - $nav-bar-height);
+    top: calc(50% - 100px);
     left: 0;
     width: 100%;
+    height: 100%;
   }
 
   >.social-media-container {
@@ -129,9 +132,8 @@
     >.img-container {
       width: 500px;
       top: calc(50% - 320px);
-      >img:first-child {
 
-      }
+      >img:first-child {}
     }
 
     .text-container {
@@ -142,9 +144,11 @@
         left: -80px;
         font-size: 40px;
       }
+
       >.headline {
         font-size: 60px;
       }
+
       >.job-title {
         font-size: 40px;
       }
@@ -157,14 +161,15 @@
     >.img-container {
       width: 400px;
       top: calc(50% - 285px);
-      >img:first-child {
 
-      }
+      >img:first-child {}
+
       >img:last-child {
         left: calc(50% - 350px);
         width: 600px;
       }
     }
+
     >.text-container {
       top: 230px
     }
@@ -178,14 +183,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     >.img-container {
       position: absolute;
       width: 450px;
       top: calc(50% - 340px);
+
       >.img:first-child {
         display: none;
       }
     }
+
     >.text-container {
       >.vertical {
         display: none;
@@ -198,25 +206,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       >.underline {
         display: none;
       }
+
       >a:last-child {
         display: none;
       }
     }
+
     >.vertical-wiggle {
       display: none;
     }
+
     >.separator {
-    top: calc(50%);
-    height: 399px;
+      top: calc(50%);
+      height: 399px;
     }
   }
 
   @media (max-width: 568px) {
     .atf {
       padding: 100px 50px;
+
       >.img-container {
         width: 400px;
         top: calc(50% - 280px);
@@ -226,9 +239,11 @@
         >.headline {
           font-size: 40px;
         }
+
         >.job-title {
           font-size: 26px;
         }
+
         >button {
           font-size: 20px;
           margin-top: 20px;
@@ -241,9 +256,11 @@
 @media (max-width: 375px) {
   .atf {
     padding: 100px 20px;
+
     >.img-container {
       width: 300px;
       top: calc(50% - 220px);
+
       >img:last-child {
         left: calc(50% - 200px);
         width: 400px;
@@ -252,17 +269,21 @@
 
     >.text-container {
       top: 120px;
+
       >.headline {
         font-size: 30px;
       }
+
       >.job-title {
         font-size: 20px;
       }
+
       >button {
         font-size: 16px;
         margin-top: 20px;
       }
     }
+
     >.separator {
       height: 200px;
     }
