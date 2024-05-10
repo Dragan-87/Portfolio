@@ -9,8 +9,8 @@
 
   >.img-container {
     position: relative;
-    width: 646px;
-    top: calc(50% - 490px);
+    width: 606px;
+    top: calc(50% - 450px);
 
     >img:first-child {
       position: absolute;
@@ -109,6 +109,14 @@
     }
 
     animation: up-and-down 1s infinite;
+  }
+
+  > img:last-child {
+    position: absolute;
+    top: calc(100% - $nav-bar-height);
+    right: -330px;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   @keyframes up-and-down {

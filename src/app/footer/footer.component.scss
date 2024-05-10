@@ -45,7 +45,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    > div:nth-child(2) {
+    > div:first-child {
+      width: 235px;
     }
+    > div:nth-child(2) {
+      width: 236px
+    }
+    > div:last-child {
+      width: 235px;
+    }
+
   }
 }
