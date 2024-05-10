@@ -21,6 +21,7 @@
       > .underlineBig {
         border-bottom: 3px solid $tertiary;
         width: 448px;
+        min-width: 448 / 2;
       }
       >span {
         font-size: $headline-font-size;

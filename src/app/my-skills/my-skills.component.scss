@@ -103,7 +103,8 @@
 
 @media (max-width: 1001px) {
   .my-skills {
-    padding: 0px 50px;
+    padding: 0px 25px;
+
     >.headline-section {
       >.headline {
         >.underline {
@@ -113,6 +114,7 @@
       }
     }
   }
+
   .tech-stack {
     justify-content: space-between;
     column-gap: 62px;
@@ -120,24 +122,48 @@
 }
 
 @media (max-width: 630px) {
-  .headline-section {
-    >.headline {
-      >span {
-        font-size: 40px;
+  .my-skills {
+    .headline-section {
+      >.headline {
+        >span {
+          font-size: 40px;
+        }
       }
-    }
-    > span {
-      font-size: 16px;
-    }
-    > a {
-      font-size: 18px;
+
+      >span {
+        font-size: 16px;
+      }
+
+      >a {
+        margin-top: 20px;
+        font-size: 16px;
+      }
     }
   }
 }
 
 @media (max-width: 564px) {
   .tech-stack {
-    column-gap: 0px;
+    column-gap: 60px;
     row-gap: 24px;
+    >.tech-box {
+      > svg {
+        width: 40px;
+      }
+    }
   }
+
+}
+
+@media screen and (max-width: 414px) {
+
+
+  .tech-stack {
+    column-gap: 30px;
+    row-gap: 24px;
+    >.tech-box {
+
+    }
+  }
+
 }

@@ -22,7 +22,6 @@
 }
 
 .card {
-  width: 85%;
   gap: 35px;
   display: flex;
   margin-bottom: 150px;
@@ -31,18 +30,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 620px;
+    max-width: 620px;
     height: 339px;
     >img {
       object-fit: cover;
-      width: 420px;
+      min-width: 420px;
       height: 339px;
       aspect-ratio: 2/10;
     }
   }
 
   >.project-description {
-    width: 513px;
+    max-width: 513px;
     height: 339px;
     display: flex;
     flex-direction: column;
