@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SvgIconComponent } from '../svg-icon/svg-icon.component';
+import { LinkService } from '../link.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -9,7 +10,7 @@ import { SvgIconComponent } from '../svg-icon/svg-icon.component';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent{
-
+  links = new LinkService();
   techIcons = [
     {
       width: '55.8',
