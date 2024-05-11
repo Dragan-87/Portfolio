@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@use '../node_modules/aos/src/sass/aos.scss' as *;
 $primary: #70E61C;
 $secondary: #1CDAE6;
 $tertiary: #9747FF;

@@ -2,7 +2,6 @@ import { LinkService } from '../link.service';
 import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 import { SocialMediaService } from './../social-media.service';
 import { Component } from '@angular/core';
-import AOS from 'aos';
 
 @Component({
   selector: 'app-atf',
