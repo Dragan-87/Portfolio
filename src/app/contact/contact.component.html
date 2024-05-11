@@ -1,11 +1,11 @@
 <div class="outer-container"id="contact">
-  <div class="headline-container">
+  <div class="headline-container" data-aos="fade-right">
     <div class="underlineSmall"></div>
     <span>Contact</span>
   </div>
 
   <div class="wrapper" >
-    <div class="contact-container">
+    <div class="contact-container" data-aos="fade-right">
       <div class="contact-section">
         <span>Got a problem to solve?</span>
         <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="form-container">
+    <div class="form-container" data-aos="fade-left">
       <form [formGroup]="contactObj">
         <div>
           <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" type="text"

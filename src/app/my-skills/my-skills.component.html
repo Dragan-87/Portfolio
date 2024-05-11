@@ -1,13 +1,13 @@
 <div class="my-skills" id="skills">
   <div class="tech-stack">
     @for(count of techIcons; track count; ) {
-    <div class="tech-box">
+    <div class="tech-box" data-aos="zoom-in">
       <app-svg-icon [class]="'big-icon'" [width]="count.width" [height]="count.height" [path]="count.path" [id]="count.id"></app-svg-icon>
       <span>{{count.name}}</span>
     </div>
   }
   </div>
-  <div class="headline-section">
+  <div class="headline-section" data-aos="fade-left">
     <div class="headline">
       <span>My skills</span>
       <div class="underline"></div>

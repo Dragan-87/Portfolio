@@ -1,5 +1,5 @@
 <div class="portfolio-section" id="portfolio">
-  <div class="headline-section">
+  <div class="headline-section" data-aos="fade-left">
     <div class="headline">
       <div class="underlineSmall"></div>
       <span>Portfolio</span>
@@ -10,8 +10,11 @@
   </div>
   <div class="wrapper">
     @for(project of projects; track project.projectTitle; let index= $index){
+    <div data-aos="fade-up">
       <app-project-card [index]="index" [projectImg]="project.projectImg" [projectTitle]="project.projectTitle"
-        [techStack]="project.techStack" [projectDescription]="project.projectDescription" [githubLink]="project.githubLink" [liveLink]="project.liveLink" ></app-project-card>
+        [techStack]="project.techStack" [projectDescription]="project.projectDescription"
+        [githubLink]="project.githubLink" [liveLink]="project.liveLink"></app-project-card>
+    </div>
     }
   </div>
   <img class="prup-blur" src="assets/img/blurred colors/Purple shadow footer V2.png" alt="" srcset="">
