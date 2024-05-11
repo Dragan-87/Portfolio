@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import aos from 'aos';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -14,10 +14,10 @@ import aos from 'aos';
 })
 export class AppComponent {
   title = 'myPage';
-  AOS = aos;
+  aos = AOS;
 
   constructor() {
-    this.AOS.init({
+    this.aos.init({
       // Global settings:
       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
