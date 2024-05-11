@@ -3,10 +3,7 @@
 .flexReverse {
   display: flex;
   flex-direction: row-reverse;
-}
-
-.marginLeft {
-  margin-left: 150px;
+  align-self: flex-end;
 }
 
 .justifyRight {
@@ -76,5 +73,24 @@
   > a:last-child {
     @include buttonStyle($background, $primary , $primary, $primary);
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1001px) {
+  .card {
+    max-width: unset;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    >.project-description {
+      width: unset;
+      align-items: center;
+      >span:nth-child(3) {
+        text-align: center;
+      }
+    >.alingSelfEnd {
+      align-self: center;
+    }
+    }
   }
 }

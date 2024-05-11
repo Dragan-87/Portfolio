@@ -1,36 +1,58 @@
 @use '../../styles.scss' as *;
 
 .portfolio-section {
-  padding: 111px 0px 0px 100px;
+  position: relative;
+  padding: 111px 0px 0px 0px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  > .headline-section {
+
+  >.headline-section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    > .headline {
+
+    >.headline {
+      width: 100%;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 2rem;
-      > .underlineSmall {
-        border-bottom: 3px solid $tertiary;
-        width: 109px;
+
+      >.underline-contaienr {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        >.underlineSmall {
+          border-bottom: 3px solid $tertiary;
+          min-width: 20px;
+          width: 50%;
+          max-width: 109px;
+
+        }
       }
-      > .underlineBig {
+
+      >.underlineBig {
         border-bottom: 3px solid $tertiary;
-        width: 448px;
-        min-width: 448 / 2;
+        min-width: 50px;
+        width: 100%;
+        max-width: 951px;
+
       }
+
       >span {
         font-size: $headline-font-size;
+        text-align: center;
       }
     }
-    > .section-description {
-      width: 986px;
+
+    >.section-description {
       font-size: $normal-font-size;
-      align-self: flex-end;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
   }
 }
@@ -57,5 +79,20 @@
 
 .wrapper {
   margin-top: 116px;
-  padding-right: 100px;
+  padding: 100px 100px 0 100px;
+}
+
+@media (max-width: 1001px) {
+  .wrapper {
+    padding: 100px 50px 0 50px;
+  }
+
+  .prup-blur {
+    top: 200px;
+  }
+
+  .green-blur {
+    bottom: 200px;
+  }
+
 }
