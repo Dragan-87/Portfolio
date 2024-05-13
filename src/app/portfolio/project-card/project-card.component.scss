@@ -47,6 +47,7 @@
       font-size: 32px;
       color: $tertiary;
       display: block;
+      font-weight: 700;
     }
     > span:nth-child(2) {
       margin-top: 15px;
@@ -95,3 +96,36 @@
   }
 }
 
+
+@media (max-width: 464px) {
+  .card {
+    >.project-img {
+      >img {
+        min-width: 300px;
+      }
+    }
+    >.project-description {
+      >span:first-child {
+        font-size: 24px;
+      }
+      >span:nth-child(2) {
+        font-size: 18px;
+      }
+      >span:nth-child(3) {
+        font-size: 14px;
+      }
+    }
+    >.project-description {
+      height: unset;
+      >.button-section {
+        font-size: 18px;
+        >a:first-child {
+          padding: 10px 10px;
+        }
+        >a:last-child {
+          padding: 10px 10px;
+        }
+      }
+    }
+  }
+}

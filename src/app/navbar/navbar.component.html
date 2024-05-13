@@ -1,8 +1,8 @@
 <header>
   <nav>
-    <span class="pointer name">Dragan</span>
+    <span (click)="links.goToStart()" class="pointer name">Dragan</span>
     <div class="mobile-view">
-      <a (click)="setIsClickedToTrue();setAboutMetoTrue();" [ngClass]="aboutMe? 'active' : ''" href="#about-me">About me</a>
+      <a (click)="setIsClickedToTrue(); setAboutMetoTrue();" [ngClass]="aboutMe? 'active' : ''" href="#about-me">About me</a>
       <a (click)="setIsClickedToTrue(); setSkillsToTrue();" [ngClass]="skills? 'active' : ''" href="#skills">Skills</a>
       <a (click)="setIsClickedToTrue(); setPortfolioToTrue();" [ngClass]="portfolio? 'active' : ''" href="#portfolio">Portfolio</a>
     </div>

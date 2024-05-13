@@ -20,4 +20,8 @@ export class LinkService {
     window.location.href = '#contact';
   }
 
+  goToStart() {
+    window.location.href = '#start';
+  }
+
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { LinkService } from '../link.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,6 +14,17 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angula
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  imgSrt = "assets/img/icons/menu-btn/go-up-btn-inactive.png";
+
+  changeImgSrc() {
+    this.imgSrt = "assets/img/icons/menu-btn/go-up-btn-active.png";
+  }
+
+  resetImgSrc() {
+    this.imgSrt = "assets/img/icons/menu-btn/go-up-btn-inactive.png";
+  }
+
+  link = new LinkService();
 
   contactObj: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),

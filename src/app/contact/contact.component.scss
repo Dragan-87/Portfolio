@@ -4,16 +4,37 @@
   display: flex;
   flex-direction: column;
   height: calc(100vh + 111px);
+  position: relative;
+
+  >img:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 4;
+    bottom: 100px;
+    right: 100px;
+
+  }
+
+  >img:last-child {
+    position: absolute;
+    z-index: -1;
+    width: 453px;
+    bottom: 0;
+  }
 }
 
 .headline-container {
   padding: 111px 0 0 0;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 44px;
 
   >.underlineSmall {
     margin: 10px 0;
+    border: 2px solid $tertiary;
+    width: 100%;
+    max-width: 50px;
   }
 
   >span {
@@ -35,10 +56,6 @@
     align-self: flex-start;
 
     >div:first-child {
-
-
-
-
 
       >.contact-headline {
         display: flex;
@@ -117,7 +134,7 @@
         -moz-appearance: none;
         background-color: #141D2F;
         border: 1px solid #70E61C;
-        width: 20px;
+        min-width: 20px;
         height: 20px;
         outline: none;
         cursor: pointer;
@@ -147,13 +164,6 @@
 
       }
     }
-  }
-
-  >img:last-child {
-    position: absolute;
-    z-index: -1;
-    width: 453px;
-    bottom: 0;
   }
 }
 
@@ -193,7 +203,88 @@ span {
   color: $tertiary;
 }
 
-.underlineSmall {
-  border-bottom: 3px solid $tertiary;
-  width: 50px;
+
+
+@media (max-width: 1001px) {
+  .outer-container {
+    padding: 0 100px 0 0;
+
+
+    >.headline-container {
+      gap: 5px;
+      padding: 0;
+    }
+    .wrapper {
+      flex-direction: column;
+      gap: 0;
+      height: 0;
+
+      >.form-container {
+        align-self: flex-start;
+        margin-top: 25px;
+        width: unset;
+        padding: 0 0 0 100px;
+        justify-content: center;
+      }
+    }
+    img:nth-child(3) {
+      right: 25px;
+      bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .outer-container {
+    padding: 0 25px 0 0;
+
+    >.headline-container {
+      gap: 5px;
+
+      >span {
+        font-size: 45px;
+      }
+
+      >.underlineSmall {
+        max-width: 15px;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+      gap: 0;
+
+      >.contact-container {
+        >.contact-section {
+          padding: 0 0 0 25px;
+
+          >span:first-child {
+            font-size: 22px;
+
+          }
+        }
+      }
+
+      >.form-container {
+        align-self: flex-start;
+        margin-top: 25px;
+        width: unset;
+        padding: 0 0 0 25px;
+        justify-content: center;
+
+      }
+    }
+
+    >img:last-child {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .outer-container {
+    >img:nth-child(3) {
+      display: none;
+    }
+  }
 }

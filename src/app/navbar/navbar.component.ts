@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, SimpleChanges } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LinkService } from '../link.service';
 
 
 @Component({
@@ -16,6 +17,7 @@ export class NavbarComponent {
   portfolio = false;
   isBurgerOpen = false;
   isClicked = false;
+  links = new LinkService();
   linkIds = ['start', 'about-me', 'skills', 'portfolio']
 
   setIsClickedToTrue() {
