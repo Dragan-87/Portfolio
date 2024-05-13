@@ -15,20 +15,14 @@ export class NavbarComponent {
   skills = false;
   portfolio = false;
   isBurgerOpen = false;
+  isClicked = false;
   linkIds = ['start', 'about-me', 'skills', 'portfolio']
 
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (this.aboutMe) {
-      this.skills = false;
-      this.portfolio = false;
-    } else if (this.skills) {
-      this.aboutMe = false;
-      this.portfolio = false;
-    } else if (this.portfolio) {
-      this.aboutMe = false;
-      this.skills = false;
-    }
+  setIsClickedToTrue() {
+    this.isClicked = true;
+    setTimeout(() => {
+      this.isClicked = false;
+    }, 1000);
   }
 
   setAboutMetoTrue() {
@@ -47,6 +41,7 @@ export class NavbarComponent {
     this.portfolio = true;
     this.aboutMe = false;
     this.skills = false;
+
   }
 
   setStartToTure() {
@@ -60,16 +55,19 @@ export class NavbarComponent {
   }
 
   @HostListener('window:scroll', ['$event'])
+  /**
+   * Handles the scroll event.
+   */
   onScroll() {
     this.linkIds.forEach(links => {
       let isAtEnd = this.isAtEndOfElement(links);
-      if (isAtEnd && links == 'skills') {
-          this.setPortfolioToTrue();
-      } else if (isAtEnd && links == 'about-me') {
+      if (isAtEnd && links == 'skills' && !this.isClicked) {
+        this.setPortfolioToTrue();
+      } else if (isAtEnd && links == 'about-me' && !this.isClicked) {
         this.setSkillsToTrue();
-      } else if (isAtEnd && links == 'start') {
+      } else if (isAtEnd && links == 'start' && !this.isClicked) {
         this.setAboutMetoTrue();
-      } else if (!isAtEnd && links == 'start' || isAtEnd && links == "portfolio") {
+      } else if (!isAtEnd && links == 'start' && !this.isClicked || isAtEnd && links == "portfolio" && !this.isClicked) {
         this.setStartToTure();
       }
     });
