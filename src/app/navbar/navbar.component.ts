@@ -15,7 +15,7 @@ export class NavbarComponent {
   skills = false;
   portfolio = false;
   isBurgerOpen = false;
-  linkIds = ['start','about-me', 'skills', 'portfolio']
+  linkIds = ['start', 'about-me', 'skills', 'portfolio']
 
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -64,12 +64,12 @@ export class NavbarComponent {
     this.linkIds.forEach(links => {
       let isAtEnd = this.isAtEndOfElement(links);
       if (isAtEnd && links == 'skills') {
-        this.setPortfolioToTrue();
+          this.setPortfolioToTrue();
       } else if (isAtEnd && links == 'about-me') {
         this.setSkillsToTrue();
       } else if (isAtEnd && links == 'start') {
         this.setAboutMetoTrue();
-      } else if (!isAtEnd && links == 'start') {
+      } else if (!isAtEnd && links == 'start' || isAtEnd && links == "portfolio") {
         this.setStartToTure();
       }
     });
