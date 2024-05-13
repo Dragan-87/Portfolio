@@ -2,7 +2,7 @@
 
 .wrapper {
   margin: auto 0;
-  padding: 0px 100px;
+  padding: 0px 0 0 100px;
   display: flex;
   gap: 15%;
   height: 100vh;
@@ -34,6 +34,7 @@
     display: flex;
     gap: 32px;
 
+
     >img {
       width: 50px;
       height: 50px;
@@ -47,8 +48,7 @@
 }
 
 .about-me-picture {
-  position: absolute;
-  right: 0;
+  width: calc(453px * 1.5);
 
   >div {
     display: flex;
@@ -62,48 +62,10 @@
 
     >.underline {
       border-bottom: 3px solid $primary;
-      width: 257px;
+      width: 100%;
     }
   }
 }
-
-@media (max-width: 1398px) {
-  .about-me-picture {
-    >div {
-      >.underline {
-        width: calc(257px / 2);
-      }
-    }
-  }
-}
-
-@media (max-width: 1138px) {
-  .about-me-picture {
-    >div {
-      >.underline {
-        width: 100px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1137px) {
-  .about-me-picture {
-    >div {
-      >img {
-        width: 350px;
-      }
-
-      >.underline {
-        width: 100px;
-      }
-    }
-  }
-}
-
-
-
-
 
 @media (max-width: 1001px) {
   .wrapper {

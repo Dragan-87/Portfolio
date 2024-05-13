@@ -32,11 +32,12 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   min-height: --webkit-fill-available;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  width: 1440px;
 }
 
 @mixin buttonStyle($color, $hover, $font-color: white, $borderColor: transparent) {
@@ -183,6 +184,12 @@ body {
 
 .desktop-view {
   display: none !important;
+}
+
+@media (max-width: 1441px) {
+  body {
+    width: 100%;
+  }
 }
 
 
