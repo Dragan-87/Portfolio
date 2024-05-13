@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, SimpleChanges } from '@angular/core';
+import { Component, HostListener, SimpleChanges } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-navbar',
@@ -14,6 +15,7 @@ export class NavbarComponent {
   skills = false;
   portfolio = false;
   isBurgerOpen = false;
+  linkIds = ['about-me', 'skills', 'portfolio']
 
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -47,7 +49,39 @@ export class NavbarComponent {
     this.skills = false;
   }
 
+  setStartToTure() {
+    this.portfolio = false;
+    this.aboutMe = false;
+    this.skills = false;
+  }
+
   openOrCloseBurgerMenu() {
     this.isBurgerOpen = !this.isBurgerOpen;
+  }
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    this.linkIds.forEach(links => {
+      let isAtEnd = this.isAtEndOfElement(links);
+      console.log(isAtEnd ? 'Am Ende des Elements.' + links : 'Nicht am Ende.' + links);
+      if (isAtEnd && links == 'start') {
+        this.setAboutMetoTrue()
+      } else if (isAtEnd && links == 'abaout-me') {
+        this.setSkillsToTrue()
+      } else if (isAtEnd && links == 'skills') {
+        this.setPortfolioToTrue();
+      }
+
+    });
+
+  }
+
+  isAtEndOfElement(elementId: string): boolean {
+    const element = document.getElementById(elementId);
+    if (!element) return false;
+
+    const elementHeight = element.offsetHeight; // Höhe des Elements
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Scroll-Offset
+
+    return scrollTop >= elementHeight;
   }
 }

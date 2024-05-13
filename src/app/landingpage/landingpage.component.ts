@@ -13,12 +13,11 @@ import { AtfComponent } from '../atf/atf.component';
     MySkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    AtfComponent
+    AtfComponent,
   ],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.scss'
 })
 export class LandingpageComponent {
 
-
-}
+ }
