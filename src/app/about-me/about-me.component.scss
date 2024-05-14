@@ -48,7 +48,8 @@
 }
 
 .about-me-picture {
-  width: calc(453px * 1.5);
+  z-index: 3;
+  width: calc(270px * 1.52);
 
   >div {
     display: flex;
@@ -62,6 +63,7 @@
 
     >.underline {
       border-bottom: 3px solid $primary;
+      min-width: 228px;
       width: 100%;
     }
   }

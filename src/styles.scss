@@ -25,19 +25,22 @@ $media-query-eight: 390px;
 
 html {
   scroll-behavior: smooth;
-  background-color: $background;
+  background-color: darken($background, $amount: 3);
   color: $primary-font-color;
   overflow-x: hidden;
   min-height: --webkit-fill-available;
+
 }
 
 body {
+  background-color: $background;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   min-height: --webkit-fill-available;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   width: 1440px;
+
 }
 
 @mixin buttonStyle($color, $hover, $font-color: white, $borderColor: transparent) {
