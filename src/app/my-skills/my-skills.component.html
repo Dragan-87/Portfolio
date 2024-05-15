@@ -1,4 +1,7 @@
 <div class="my-skills" id="skills">
+  <button class="skills-btn-mobile" (click)="links.goToContact()">
+    Get in touch
+  </button>
   <div class="tech-stack">
     @for(count of techIcons; track count; ) {
     <div class="tech-box" data-aos="zoom-in">
@@ -6,7 +9,7 @@
       <span>{{count.name}}</span>
     </div>
   }
-  </div>
+</div>
   <div class="headline-section" data-aos="fade-left">
     <div class="headline">
       <span>My skills</span>
