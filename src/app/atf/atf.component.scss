@@ -46,6 +46,7 @@
 
     >.headline {
       font-size: $headline-font-size;
+      font-weight: 700;
     }
 
     >.job-title {
@@ -317,7 +318,7 @@
     }
 
     >.social-media-container {
-      bottom: 30px;
+      bottom: 0px;
     }
     >img:last-child {
       left: calc(100% - 150px);

@@ -74,6 +74,12 @@ body {
   }
 }
 
+@mixin flex($justify: flex-start, $align: flex-start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 /* poppins-100 - latin */
 @font-face {
   font-display: swap;
