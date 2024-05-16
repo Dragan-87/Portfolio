@@ -1,5 +1,30 @@
 @use '../../styles.scss' as *;
 
+@media (max-width: 1001px) {
+  .outer-container {
+    padding: 0 100px 0 0;
+
+
+    >.headline-container {
+      padding: 0;
+    }
+
+    .wrapper {
+      flex-direction: column;
+      gap: 0;
+      height: 0;
+
+      >.form-container {
+        align-self: flex-start;
+        margin-top: 25px;
+        width: unset;
+        padding: 0 0 0 100px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .outer-container {
     padding: 0 25px 0 0;

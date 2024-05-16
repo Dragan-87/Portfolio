@@ -1,11 +1,10 @@
 @use '../../styles.scss' as *;
 
 .atf {
-  height: calc(100vh - $nav-bar-height);
+  height: calc(100svh - $nav-bar-height);
   padding: 210px 100px 0 100px;
-  display: flex;
-  justify-content: space-between;
   position: relative;
+  @include flex(space-between);
 
   >.img-container {
     position: relative;
@@ -77,8 +76,7 @@
     position: absolute;
     bottom: 15%;
     left: 0;
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     gap: 40px;
     z-index: 3;
 
@@ -99,8 +97,7 @@
     position: absolute;
     bottom: 15%;
     right: 30px;
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     rotate: 90deg;
     text-decoration: none;
     color: $primary-font-color;
@@ -139,4 +136,3 @@
 
   }
 }
-
