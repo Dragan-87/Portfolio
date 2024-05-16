@@ -3,9 +3,7 @@
 footer {
   z-index: 4;
   height: 291px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
   border-top: 4px solid $primary;
   padding: 0px 100px;
   > div:first-child {
@@ -41,9 +39,8 @@ footer {
 @media (max-width: 1001px) {
   footer {
     padding: 0px 50px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    @include flex(center, unset);
     gap: 30px;
     > div:first-child {
       width: 235px;

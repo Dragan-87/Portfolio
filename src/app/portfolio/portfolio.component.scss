@@ -8,15 +8,12 @@
 
   >.headline-section {
     width: 100%;
-    display: flex;
+    @include flex(unset, flex-end);
     flex-direction: column;
-    align-items: flex-end;
 
     >.headline {
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex(center, center);
       gap: 2rem;
 
       >.underline-contaienr {
@@ -51,8 +48,7 @@
     >.section-description {
       font-size: $normal-font-size;
       width: 100%;
-      display: flex;
-      justify-content: center;
+      @include flex(center, unset);
       text-align: center;
     }
   }
@@ -83,4 +79,3 @@
   padding: 100px 100px 0 100px;
   z-index: 4;
 }
-

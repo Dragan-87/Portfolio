@@ -2,8 +2,7 @@
 
 .my-skills {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between, unset);
   height: 100vh;
 
   >img {
@@ -27,10 +26,8 @@
 }
 
 .headline-section {
-  display: flex;
+  @include flex(center, center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 570px;
   z-index: 4;
 
@@ -38,8 +35,7 @@
     width: 100%;
     text-align: right;
     position: relative;
-    display: flex;
-    align-items: center;
+    @include flex(unset, center);
     gap: 42px;
 
     >span {
@@ -81,9 +77,8 @@
 }
 
 .tech-box {
-  display: flex;
+  @include flex(unset, center);
   flex-direction: column;
-  align-items: center;
   z-index: 4;
   width: 100px;
   height: 88px;

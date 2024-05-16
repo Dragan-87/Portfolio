@@ -16,8 +16,7 @@
 
 .headline-container {
   padding: 111px 0 0 0;
-  display: flex;
-  align-items: center;
+  @include flex(unset, center);
   gap: 44px;
 
   >.underlineSmall {
@@ -42,10 +41,8 @@
 
   >.contact-container {
     position: relative;
-    display: flex;
     flex-direction: column;
-    align-self: flex-start;
-
+    @include flex(unset, flex-start);
     >div:first-child {
 
       >.contact-headline {
@@ -167,9 +164,8 @@ span {
 }
 
 .checkbox-container {
-  display: flex;
+  @include flex(center, unset);
   flex-direction: column;
-  justify-content: center;
 
   >div {
     display: flex;
@@ -223,4 +219,3 @@ span {
     }
   }
 }
-
