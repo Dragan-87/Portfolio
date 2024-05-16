@@ -143,7 +143,7 @@
 
 @media (max-width: 768px) {
   .my-skills {
-    padding: 171px 0px 0 0;
+    padding: 171px, 0px 0 0;
 
     >.headline-section {
 
@@ -213,11 +213,13 @@
 
 }
 
-@media screen and (max-width: 414px) {
-
+@media screen and (max-width: 420px) {
+  .my-skills {
+    padding-top: calc($nav-bar-height + 0px);
+  }
 
   .tech-stack {
-    column-gap: 30px;
+    column-gap: unset;
     row-gap: 24px;
   }
 

@@ -25,6 +25,7 @@ $media-query-eight: 390px;
 
 html {
   scroll-behavior: smooth;
+  z-index: 2;
   background-color: darken($background, $amount: 3);
   color: $primary-font-color;
   overflow-x: hidden;
@@ -38,7 +39,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   min-height: --webkit-fill-available;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left);
   max-width: 1920px;
   width: 100%;
   overflow-x: hidden;
@@ -68,7 +69,7 @@ body {
   }
 
   &:disabled {
-    cursor: not-allowed;
+    cursor: not-allowed !important;
     background-color: gray;
     border: 1px solid gray;
     color: $primary-font-color;

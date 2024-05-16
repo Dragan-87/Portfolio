@@ -17,7 +17,7 @@
     </div>
 
     <div class="form-container" data-aos="fade-left">
-      <form [formGroup]="contactObj">
+      <form [formGroup]="contactObj" (ngSubmit)="submitData()">
         <div>
           <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" type="text"
             formControlName="name" placeholder="Your name " required>
@@ -43,10 +43,10 @@
           </div>
           <span class="invalid" *ngIf="isPrivacyPolicyInvalid()">Please accept the privacy policy</span>
         </div>
-        <button class="sub-btn" (click)="submitData()" type="submit" [disabled]="contactObj.invalid">Send message
+        <button class="sub-btn" type="submit" [disabled]="contactObj.invalid">Send message
           :)</button>
-        <!-- <img class="pointer" (click)="link.goToStart()" (mouseover)="changeImgSrc()" (mouseleave)="resetImgSrc()"
-          src="{{imgSrt}}" alt=""> -->
+        <img class="pointer" (click)="link.goToStart()" (mouseover)="changeImgSrc()" (mouseleave)="resetImgSrc()"
+          src="{{imgSrt}}" alt="">
       </form>
     </div>
   </div>

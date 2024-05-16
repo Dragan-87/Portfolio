@@ -39,6 +39,7 @@ export class ContactComponent {
 
   submitData() {
     const contacValueJSON = JSON.stringify(this.contactObj.value);
+    console.log(contacValueJSON);
     this.contactObj.reset();
   }
 

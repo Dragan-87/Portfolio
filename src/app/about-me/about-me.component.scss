@@ -121,6 +121,9 @@
 }
 
 @media(max-width:420px) {
+  .about-me {
+    padding-top: calc($nav-bar-height / 2);
+  }
   .personal-info {
     padding-left: 0 !important;
   }
