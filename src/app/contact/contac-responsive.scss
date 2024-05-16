@@ -1,0 +1,64 @@
+@use '../../styles.scss' as *;
+
+@media (max-width: 768px) {
+  .outer-container {
+    padding: 0 25px 0 0;
+
+    >.headline-container {
+      gap: 5px;
+
+      >span {
+        font-size: 45px;
+      }
+
+      >.underlineSmall {
+        max-width: 15px;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+      gap: 0;
+
+      >.contact-container {
+        >.contact-section {
+          padding: 0 0 0 25px;
+
+          >span:first-child {
+            font-size: 22px;
+
+          }
+        }
+      }
+
+      >.form-container {
+        position: relative;
+        align-self: flex-start;
+        margin-top: 25px;
+        width: unset;
+        padding: 0 0 0 25px;
+        justify-content: center;
+      }
+    }
+
+    >img:last-child {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .outer-container {
+    padding-top: 120px;
+
+    >img:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .outer-container {
+    height: calc(100vh + 111px + 150px);
+  }
+}

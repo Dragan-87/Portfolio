@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [SvgIconComponent],
   templateUrl: './atf.component.html',
-  styleUrl: './atf.component.scss'
+  styleUrls: ['./atf.component.scss', './atf-responsive.scss']
 })
 export class AtfComponent {
 

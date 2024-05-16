@@ -11,7 +11,7 @@ import { LinkService } from '../link.service';
     ReactiveFormsModule,
   ],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.scss', './contac-responsive.scss']
 })
 export class ContactComponent {
   imgSrt = "assets/img/icons/menu-btn/go-up-btn-inactive.png";

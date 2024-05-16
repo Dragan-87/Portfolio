@@ -7,7 +7,7 @@ import { LinkService } from '../link.service';
   standalone: true,
   imports: [SvgIconComponent],
   templateUrl: './my-skills.component.html',
-  styleUrl: './my-skills.component.scss'
+  styleUrls: ['./my-skills.component.scss', './my-skills-responsiv.scss']
 })
 export class MySkillsComponent{
   links = new LinkService();
