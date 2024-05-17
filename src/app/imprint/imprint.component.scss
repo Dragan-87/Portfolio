@@ -1,0 +1,9 @@
+.impressum {
+  padding: 0 100px;
+}
+
+@media(max-width: 550px) {
+  .impressum {
+    padding: 0 8px;
+  }
+}

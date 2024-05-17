@@ -17,7 +17,7 @@
     </div>
 
     <div class="form-container" data-aos="fade-left">
-      <form [formGroup]="contactObj" (ngSubmit)="submitData()">
+      <form [formGroup]="contactObj" (ngSubmit)="onSubmit()">
         <div>
           <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" type="text"
             formControlName="name" placeholder="Your name " required>

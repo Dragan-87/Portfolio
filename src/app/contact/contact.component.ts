@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { LinkService } from '../link.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +15,48 @@ import { LinkService } from '../link.service';
   styleUrls: ['./contact.component.scss', './contac-responsive.scss']
 })
 export class ContactComponent {
+  link = new LinkService();
   imgSrt = "assets/img/icons/menu-btn/go-up-btn-inactive.png";
+  mailTest = false;
+  contactObj: FormGroup;
+
+  constructor(private http: HttpClient) {
+    this.contactObj = new FormGroup({
+      name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
+      email: new FormControl('', [Validators.required, Validators.email, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$')]),
+      message: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(5000), Validators.pattern('^[a-zA-Z0-9.,!? ]*$')]),
+      privacyPolicy: new FormControl(false, [Validators.requiredTrue])
+    });
+  }
+
+  post = {
+    endPoint: 'https://dragan-saric.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'application/json',
+        responseType: 'json',
+      },
+    },
+  };
+
+  onSubmit() {
+    if (this.contactObj.valid) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactObj.value), this.post.options)
+        .subscribe({
+          next: (response: any) => {
+            console.log(response);
+            this.contactObj.reset();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('Send POST request complete'),
+        });
+    } else {
+      console.error('Form is invalid');
+    }
+  }
 
   changeImgSrc() {
     this.imgSrt = "assets/img/icons/menu-btn/go-up-btn-active.png";
@@ -23,27 +65,6 @@ export class ContactComponent {
   resetImgSrc() {
     this.imgSrt = "assets/img/icons/menu-btn/go-up-btn-inactive.png";
   }
-
-  link = new LinkService();
-
-  contactObj: FormGroup = new FormGroup({
-    name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
-    email: new FormControl('', [Validators.required, Validators.email, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$')]),
-    message: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(5000), Validators.pattern('^[a-zA-Z0-9.,!? ]*$')]),
-    privacyPolicy: new FormControl(false, [Validators.requiredTrue])
-  });
-
-  constructor() {
-
-  }
-
-  submitData() {
-    const contacValueJSON = JSON.stringify(this.contactObj.value);
-    console.log(contacValueJSON);
-    this.contactObj.reset();
-  }
-
-
 
   isEmailInvalid() {
     return this.contactObj.controls['email'].invalid && (this.contactObj.controls['email'].touched || this.contactObj.controls['email'].dirty);
@@ -76,4 +97,5 @@ export class ContactComponent {
   isPrivacyPolicyValidAndTouched() {
     return this.contactObj.controls['privacyPolicy'].valid && (this.contactObj.controls['privacyPolicy'].touched || this.contactObj.controls['privacyPolicy'].dirty);
   }
+
 }
