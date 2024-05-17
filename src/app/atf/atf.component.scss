@@ -11,11 +11,12 @@
     width: 606px;
     top: calc(50% - 450px);
 
-    >img:first-child {
+    >.hero {
+      width: 1000px;
       position: absolute;
-      top: 5px;
-      left: 0;
-      width: inherit;
+      top: -63px;
+      left: -182px;
+
       z-index: 2;
     }
 
