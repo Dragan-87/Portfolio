@@ -38,7 +38,7 @@
     padding: 100px 50px 0 50px;
     flex-direction: column;
     @include flex(center, center);
-    height: calc(100svh + $nav-bar-height);
+    height: calc(100lvh + $nav-bar-height);
     >.img-container {
       position: absolute;
       width: 450px;
@@ -62,7 +62,6 @@
     }
 
     >.social-media-container {
-      bottom: 10px !important;
       width: 100%;
       @include flex(center, center);
 
@@ -91,7 +90,7 @@
 
       >.img-container {
         width: 400px;
-        top: calc(50% - 280px);
+        top: calc(50% - 330px);
 
         >img:last-child {
           left: calc(50% - 300px);
@@ -100,7 +99,7 @@
       }
 
       >.text-container {
-        top: 180px;
+        top: calc(50% - 369px);
 
         >.headline {
           font-size: 40px;
@@ -117,7 +116,6 @@
       }
 
       >.social-media-container {
-        bottom: 10px !important;
         width: 100%;
 
         >.underline {
@@ -130,7 +128,8 @@
       }
 
       >.separator {
-        height: 500px;
+        height: 260px;
+        top: calc(50% - 18px);
       }
     }
 
@@ -143,7 +142,7 @@
 
     >.img-container {
       width: 300px;
-      top: calc(50% - 220px);
+      top: calc(50% - 320px);
 
       >img:last-child {
         left: calc(50% - 200px);
@@ -152,7 +151,7 @@
     }
 
     >.text-container {
-      top: 150px;
+      top: calc(50% - 316px);
 
       >.headline {
         font-size: 30px;
@@ -170,7 +169,7 @@
 
     >.separator {
       height: 200px;
-      top: calc(50% - 10px);
+      top: calc(50% - 66px);
     }
 
     >.social-media-container {

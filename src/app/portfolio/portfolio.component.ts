@@ -27,7 +27,7 @@ export class PortfolioComponent {
       techStack: 'JavaScript | HTML | CSS',
       projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.',
       githubLink: 'https://github.com/Dragan-87/el-pollo-loco',
-      liveLink: 'https://dragan-saric.developerakademie.net/el-pollp-loco/index.html'
+      liveLink: 'https://dragan-saric.de/el-pollo-loco/index.html'
     },
 
   ];

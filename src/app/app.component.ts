@@ -40,3 +40,4 @@ export class AppComponent {
   }
 
 }
+// "build": "ng build --base-href=/angular-projects/myPage/",
