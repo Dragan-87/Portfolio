@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { LinkService } from '../link.service';
 import { HttpClient } from '@angular/common/http';
-import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +12,6 @@ import { Router, RouterModule, RouterOutlet } from '@angular/router';
     CommonModule,
     ReactiveFormsModule,
     RouterModule,
-    RouterOutlet,
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss', './contac-responsive.scss']
