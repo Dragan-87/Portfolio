@@ -87,3 +87,9 @@
     height: calc(100vh + 111px + 150px);
   }
 }
+
+@media(max-width: 375px) {
+  .outer-container {
+    height: calc(100vh + 111px + 250px);
+  }
+}
