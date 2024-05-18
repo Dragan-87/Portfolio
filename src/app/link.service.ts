@@ -21,7 +21,7 @@ export class LinkService {
   }
 
   goToStart() {
-    window.location.href = '#start';
+    window.location.href = '#home';
   }
 
 }

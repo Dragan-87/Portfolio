@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
-
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }
 }
