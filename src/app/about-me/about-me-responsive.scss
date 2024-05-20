@@ -20,11 +20,8 @@
 @media(max-width:640px) {
 
   .description-content {
-    padding: 0 16px;
-
     >span:first-child {
       font-size: 45px !important;
-
     }
   }
 }
@@ -32,6 +29,8 @@
 @media(max-width:420px) {
   .about-me {
     padding-top: calc($nav-bar-height / 2);
+    padding: 0 25px;
+
   }
 
   .personal-info {

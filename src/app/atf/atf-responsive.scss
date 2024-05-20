@@ -90,12 +90,14 @@
           top: calc(50% - 120px);
           left: calc(50% - 400px);
         }
+
         >img:last-child {
           left: calc(50% - 400px);
           top: calc(50% - 200px);
           width: 800px;
         }
       }
+
       >.separator {
         height: 500px;
         top: calc(50% - 100px);
@@ -109,7 +111,7 @@
 
   @media (max-width: 568px) {
     .atf {
-      padding: 100px 50px 0 50px;
+      padding: 100px 25px 0 25px;
 
       >.img-container {
         width: 400px;
@@ -148,10 +150,6 @@
       >.social-media-container {
         width: 100%;
 
-        >.underline {
-          display: none;
-        }
-
         >a:last-child {
           display: none;
         }
@@ -161,54 +159,83 @@
         height: 260px;
         top: calc(50% - 18px);
       }
+
+      >img:last-child {
+        left: 150px;
+      }
     }
 
   }
 }
 
-@media (max-width: 376px) {
+@media(max-width: 400px) {
   .atf {
-    padding: 100px 20px;
-
     >.img-container {
-      width: 300px;
-      top: calc(50% - 320px);
+      >.hero {
+        width: 600px;
+        top: calc(50% - 39px);
+        left: calc(50% - 300px);
+      }
+
+    }
+    >.text-container {
+      top: calc(50% - 410px);
+    }
+    >.separator {
+      height: 260px;
+      top: calc(50% - 73px);
+    }
+    >.social-media-container {
+      bottom: 24%;
+    }
+
+  }
+
+
+  @media (max-width: 376px) {
+    .atf {
+      padding: 100px 20px;
+
+      >.img-container {
+        width: 300px;
+        top: calc(50% - 320px);
+
+        >img:last-child {
+          left: calc(50% - 250px);
+          top: calc(50% - 20px);
+          width: 500px;
+        }
+      }
+
+      >.text-container {
+        top: calc(50% - 316px);
+
+        >.headline {
+          font-size: 30px;
+        }
+
+        >.job-title {
+          font-size: 20px;
+        }
+
+        >button {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+      }
+
+      >.separator {
+        height: 230px;
+        top: calc(50% - 66px);
+      }
+
+      >.social-media-container {
+        bottom: 0px;
+      }
 
       >img:last-child {
-        left: calc(50% - 250px);
-        top: calc(50% - 20px);
-        width: 500px;
+        left: calc(100% - 150px);
       }
-    }
-
-    >.text-container {
-      top: calc(50% - 316px);
-
-      >.headline {
-        font-size: 30px;
-      }
-
-      >.job-title {
-        font-size: 20px;
-      }
-
-      >button {
-        font-size: 16px;
-        margin-top: 20px;
-      }
-    }
-
-    >.separator {
-      height: 230px;
-      top: calc(50% - 66px);
-    }
-
-    >.social-media-container {
-      bottom: 0px;
-    }
-
-    >img:last-child {
-      left: calc(100% - 150px);
     }
   }
 }
