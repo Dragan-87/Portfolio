@@ -16,12 +16,12 @@
       @include flex(center, center);
       gap: 2rem;
 
-      >.underline-contaienr {
+      >.divider-container {
         width: 100%;
         display: flex;
         justify-content: flex-end;
 
-        >.underlineSmall {
+        >.divider-small {
           border-bottom: 3px solid $tertiary;
           min-width: 20px;
           width: 50%;
@@ -30,7 +30,7 @@
         }
       }
 
-      >.underlineBig {
+      >.divider-big {
         border-bottom: 3px solid $tertiary;
         min-width: 50px;
         width: 100%;

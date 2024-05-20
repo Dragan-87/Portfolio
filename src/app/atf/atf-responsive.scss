@@ -62,7 +62,7 @@
       width: 100%;
       @include flex(center, center);
 
-      >.underline {
+      >.divider {
         display: none;
       }
 
@@ -131,7 +131,7 @@
       }
 
       >.text-container {
-        top: calc(50% - 369px);
+        top: calc(50% - 400px);
 
         >.headline {
           font-size: 40px;
@@ -149,7 +149,7 @@
 
       >.social-media-container {
         width: 100%;
-
+        bottom: 20%;
         >a:last-child {
           display: none;
         }
@@ -230,7 +230,7 @@
       }
 
       >.social-media-container {
-        bottom: 0px;
+        bottom: 24%;
       }
 
       >img:last-child {

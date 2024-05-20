@@ -64,7 +64,7 @@
 
         ;
 
-        >.underline {
+        >.divider {
           width: 20px;
         }
       }
@@ -93,6 +93,7 @@
 
 @media (max-width: 630px) {
   .my-skills {
+    padding: 100px 0;
     .headline-section {
 
       >span {

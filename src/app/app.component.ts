@@ -15,6 +15,7 @@ import AOS from 'aos';
 export class AppComponent {
   title = 'myPage';
   aos = AOS;
+  tablet: any;
 
   constructor() {
     this.aos.init({
@@ -35,8 +36,8 @@ export class AppComponent {
       once: true, // whether animation should happen only once - while scrolling down
       mirror: true, // whether elements should animate out while scrolling past them
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
     });
+
   }
 
 }
