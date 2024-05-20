@@ -21,4 +21,7 @@ export class FooterComponent {
 
   }
 
+  year() {
+    return new Date().getFullYear();
+  }
 }

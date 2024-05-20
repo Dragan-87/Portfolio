@@ -1,13 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, SimpleChanges } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LinkService } from '../link.service';
+import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -18,7 +21,23 @@ export class NavbarComponent {
   isBurgerOpen = false;
   isClicked = false;
   links = new LinkService();
-  linkIds = ['start', 'about-me', 'skills', 'portfolio']
+  linkIds = ['home', 'about-me', 'skills', 'portfolio']
+
+  constructor(private router: Router) {}
+
+  async scrollTo(anker: string) {
+    const element = document.getElementById(anker);
+    if (anker == 'home') {
+      await this.router.navigate(['/']);
+    }
+    
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    await this.router.navigate(['/']);
+    this.scrollTo(anker);
+  }
 
   setIsClickedToTrue() {
     this.isClicked = true;
@@ -67,9 +86,9 @@ export class NavbarComponent {
         this.setPortfolioToTrue();
       } else if (isAtEnd && links == 'about-me' && !this.isClicked) {
         this.setSkillsToTrue();
-      } else if (isAtEnd && links == 'start' && !this.isClicked) {
+      } else if (isAtEnd && links == 'home' && !this.isClicked) {
         this.setAboutMetoTrue();
-      } else if (!isAtEnd && links == 'start' && !this.isClicked || isAtEnd && links == "portfolio" && !this.isClicked) {
+      } else if (!isAtEnd && links == 'home' && !this.isClicked || isAtEnd && links == "portfolio" && !this.isClicked) {
         this.setStartToTure();
       }
     });

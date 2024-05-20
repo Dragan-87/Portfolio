@@ -20,4 +20,4 @@ import { AtfComponent } from '../atf/atf.component';
 })
 export class LandingpageComponent {
 
- }
+}

@@ -3,6 +3,7 @@ import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 import { SocialMediaService } from './../social-media.service';
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-atf',
   standalone: true,

@@ -1,10 +1,10 @@
 <header>
   <nav>
-    <span (click)="links.goToStart()" class="pointer name">Dragan</span>
+    <span (click)="scrollTo('home')" class="pointer name">Dragan</span>
     <div class="mobile-view">
-      <a (click)="setIsClickedToTrue(); setAboutMetoTrue();" [ngClass]="aboutMe? 'active' : ''" href="#about-me">About me</a>
-      <a (click)="setIsClickedToTrue(); setSkillsToTrue();" [ngClass]="skills? 'active' : ''" href="#skills">Skills</a>
-      <a (click)="setIsClickedToTrue(); setPortfolioToTrue();" [ngClass]="portfolio? 'active' : ''" href="#portfolio">Portfolio</a>
+      <a class="pointer" (click)="setIsClickedToTrue(); setAboutMetoTrue();" [ngClass]="aboutMe? 'active' : ''" (click)="scrollTo('about-me')">About me</a>
+      <a class="pointer" (click)="setIsClickedToTrue(); setSkillsToTrue();" [ngClass]="skills? 'active' : ''" (click)="scrollTo('skills')">Skills</a>
+      <a class="pointer" (click)="setIsClickedToTrue(); setPortfolioToTrue();" [ngClass]="portfolio? 'active' : ''" (click)="scrollTo('portfolio')">Portfolio</a>
     </div>
     <div class="desktop-view pointer" (click)="openOrCloseBurgerMenu()">
       @if(isBurgerOpen) {
