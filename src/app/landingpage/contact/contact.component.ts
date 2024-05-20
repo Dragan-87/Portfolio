@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
-import { LinkService } from '../../link.service';
+import { LinkService } from '../../shared/link.service';
 import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 

@@ -10,7 +10,7 @@ import { SocialMediaService } from '../social-media.service';
   styleUrl: './svg-icon.component.scss'
 })
 export class SvgIconComponent {
-  @Input() class= '';
+  @Input() class = '';
   @Input() path!: string[];
   @Input() id!: string;
   @Input() width!: string;

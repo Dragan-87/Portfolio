@@ -1,6 +1,6 @@
-import { LinkService } from '../../link.service';
-import { SvgIconComponent } from '../../svg-icon/svg-icon.component';
-import { SocialMediaService } from '../../social-media.service';
+import { LinkService } from '../../shared/link.service';
+import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
+import { SocialMediaService } from '../../shared/social-media.service';
 import { Component } from '@angular/core';
 
 

@@ -23,14 +23,14 @@ export class NavbarComponent {
   links = new LinkService();
   linkIds = ['home', 'about-me', 'skills', 'portfolio']
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   async scrollTo(anker: string) {
     const element = document.getElementById(anker);
     if (anker == 'home') {
       await this.router.navigate(['/']);
     }
-    
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       return;
