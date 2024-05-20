@@ -1,6 +1,6 @@
-import { LinkService } from '../link.service';
-import { SvgIconComponent } from '../svg-icon/svg-icon.component';
-import { SocialMediaService } from './../social-media.service';
+import { LinkService } from '../../link.service';
+import { SvgIconComponent } from '../../svg-icon/svg-icon.component';
+import { SocialMediaService } from '../../social-media.service';
 import { Component } from '@angular/core';
 
 
@@ -16,6 +16,6 @@ export class AtfComponent {
   socialMedia: SocialMediaService = new SocialMediaService();
   links: LinkService = new LinkService();
 
-  constructor() {}
-  
+  constructor() { }
+
 }

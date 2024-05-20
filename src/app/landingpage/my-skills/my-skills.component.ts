@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SvgIconComponent } from '../svg-icon/svg-icon.component';
-import { LinkService } from '../link.service';
+import { SvgIconComponent } from '../../svg-icon/svg-icon.component';
+import { LinkService } from '../../link.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -9,7 +9,7 @@ import { LinkService } from '../link.service';
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss', './my-skills-responsiv.scss']
 })
-export class MySkillsComponent{
+export class MySkillsComponent {
   links = new LinkService();
   techIcons = [
     {
