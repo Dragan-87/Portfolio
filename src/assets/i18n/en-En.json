@@ -1,42 +1,25 @@
 {
-  "nav": {
-    "about-me": "About me",
-    "contact": "Contact",
-    "portfolio": "Portfolio"
-  },
-  "atf": {
-    "i-am": "I am",
-    "job-title": "Frontend Developer",
-    "scroll-down": "Scroll down"
-  },
-  "about-me": {
-    "title": "About me",
-    "text": "Hi there, I am a frontend developer based in Mannheim.I used to work as a logistics specialist but after a traffic accident, I had to take a different career path. Since I've always been interested in IT and development, I saw this as a new opportunity and turned my dream into reality.",
-    "text-2": "I enjoy finding the optimal solution for an existing problem to ensure that the end-user has an unforgettable experience.",
-    "text-3": "Since I don't just see development as a job but as a vocation, I continuously educate myself further."
-  },
-  "my-skills": {
-    "title": "My skills",
-    "text": "I have gained experience in building projects with various front end technologies and concepts."
-  },
-  "portfolio": {
-    "title": "Portfolio",
-    "text": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-    "join-project": {
-      "text": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
-    },
-    "el-pollo-loco": {
-      "text": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken."
-    }
-  },
-  "contact": {
-    "title": "Contact",
-    "headline": "Got a problem to solve?",
-    "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-    "text-2": "I am looking forward to hearing from you!",
-    "privacy-policy": "I've read the privacy policy and agree to the processing of my data as outlined."
-  },
-  "footer": {
-    "imprint": "Imprint"
-  }
+  "nav_about_me": "About me",
+  "nav_contact": "Contact",
+  "nav_portfolio": "Portfolio",
+  "nav_skills": "Skills",
+  "atf_i_am": "I am",
+  "atf_job_title": "Frontend Developer",
+  "atf_scroll_down": "Scroll down",
+  "about_me_title": "About me",
+  "about_me_text": "Hi there, I am a frontend developer based in Mannheim.I used to work as a logistics specialist but after a traffic accident, I had to take a different career path. Since I've always been interested in IT and development, I saw this as a new opportunity and turned my dream into reality.",
+  "about_me_text_2": "I enjoy finding the optimal solution for an existing problem to ensure that the end-user has an unforgettable experience.",
+  "about_me_text_3": "Since I don't just see development as a job but as a vocation, I continuously educate myself further.",
+  "my_skills_title": "My skills",
+  "my_skills_text": "I have gained experience in building projects with various front end technologies and concepts.",
+  "title": "Portfolio",
+  "text": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+  "portfolio_join_project_text": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+  "el_pollo_loco_text": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.",
+  "contact_title": "Contact",
+  "contact_headline": "Got a problem to solve?",
+  "contact_text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+  "contact_text_2": "I am looking forward to hearing from you!",
+  "contact_privacy_policy": "I've read the privacy policy and agree to the processing of my data as outlined.",
+  "imprint": "Imprint"
 }

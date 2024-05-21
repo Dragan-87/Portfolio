@@ -1,16 +1,19 @@
+import { TranslationService } from './../../../assets/services/translation.service';
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LinkService } from '../../../assets/services/link.service';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterModule],
+  imports: [ReactiveFormsModule, CommonModule, RouterModule, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -23,7 +26,7 @@ export class NavbarComponent {
   links = new LinkService();
   linkIds = ['home', 'about-me', 'skills', 'portfolio']
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,public translationService: TranslationService) { }
 
   async scrollTo(anker: string) {
     const element = document.getElementById(anker);

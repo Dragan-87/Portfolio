@@ -2,19 +2,31 @@
   <nav>
     <span (click)="scrollTo('home')" class="pointer name">Dragan</span>
     <div class="mobile-view">
-      <a class="pointer" (click)="setIsClickedToTrue(); setAboutMetoTrue();" [ngClass]="aboutMe? 'active' : ''" (click)="scrollTo('about-me')">About me</a>
-      <a class="pointer" (click)="setIsClickedToTrue(); setSkillsToTrue();" [ngClass]="skills? 'active' : ''" (click)="scrollTo('skills')">Skills</a>
-      <a class="pointer" (click)="setIsClickedToTrue(); setPortfolioToTrue();" [ngClass]="portfolio? 'active' : ''" (click)="scrollTo('portfolio')">Portfolio</a>
+      <a class="pointer" (click)="setIsClickedToTrue(); setAboutMetoTrue();" [ngClass]="aboutMe? 'active' : ''"
+        (click)="scrollTo('about-me')">{{"nav_about_me" | translate}}</a>
+      <a class="pointer" (click)="setIsClickedToTrue(); setSkillsToTrue();" [ngClass]="skills? 'active' : ''"
+        (click)="scrollTo('skills')">{{"nav_skills" | translate}}</a>
+      <a class="pointer" (click)="setIsClickedToTrue(); setPortfolioToTrue();" [ngClass]="portfolio? 'active' : ''"
+        (click)="scrollTo('portfolio')">{{"nav_portfolio" | translate}}</a>
+      <div class="translation">
+        <a class="pointer" (click)="translationService.switchLanguage('en-EN')">EN</a>
+        <span>|</span>
+        <a class="pointer" (click)="translationService.switchLanguage('de-DE')">DE</a>
+      </div>
     </div>
     <div class="desktop-view pointer" (click)="openOrCloseBurgerMenu()">
       @if(isBurgerOpen) {
       <img src="assets/img/icons/menu-btn/close-btn.png" aria-label="burger menu">
       <div class="burger-menu">
         <div class="menu-container">
-          <a (click)="setAboutMetoTrue()" href="#about-me">About me</a>
-          <a (click)="setSkillsToTrue()"  href="#skills">Skills</a>
-          <a (click)="setPortfolioToTrue()" href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
+          <a (click)="setAboutMetoTrue()" href="#about-me">{{"nav_about_me" | translate}}</a>
+          <a (click)="setSkillsToTrue()" href="#skills">{{"nav_skills" | translate}}</a>
+          <a (click)="setPortfolioToTrue()" href="#portfolio">{{"nav_portfolio" | translate}}</a>
+          <a href="#contact">{{"nav_contact" | translate}}</a>
+          <div class="translation">
+            <a href="#" (click)="translationService.switchLanguage('en-EN')">EN</a>
+            <a href="#" (click)="translationService.switchLanguage('de-DE')">DE</a>
+          </div>
         </div>
       </div>
       } @else {

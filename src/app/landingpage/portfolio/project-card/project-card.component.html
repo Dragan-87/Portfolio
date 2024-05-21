@@ -10,7 +10,7 @@
       {{techStack}}
     </span>
     <span [ngClass]="{'textAlingRight': evenOrOdd()}">
-      {{projectDescription}}
+      {{projectDescription | translate}}
     </span>
     <div [ngClass]="{'justifyRight': evenOrOdd()}" class="button-section">
       <a target="_blank" href="{{liveLink}}">Live test</a>

@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
 import { LinkService } from '../../../assets/services/link.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../assets/services/translation.service';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [SvgIconComponent],
+  imports: [SvgIconComponent, TranslateModule],
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss', './my-skills-responsiv.scss']
 })

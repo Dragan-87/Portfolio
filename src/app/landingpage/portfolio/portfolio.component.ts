@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../assets/services/translation.service';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectCardComponent, FormsModule],
+  imports: [ProjectCardComponent, FormsModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss', './portfolio-responsive.scss']
 })
 export class PortfolioComponent {
-
-
+  translate = Inject(TranslationService);
+  
   projects = [
     {
       projectImg: 'join',

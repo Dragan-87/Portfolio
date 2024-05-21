@@ -1,12 +1,16 @@
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from './../../../assets/services/translation.service';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss', './about-me-responsive.scss']
 })
 export class AboutMeComponent {
+  constructor() { }
 
 }
