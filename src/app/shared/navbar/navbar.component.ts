@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LinkService } from '../link.service';
+import { LinkService } from '../../../assets/services/link.service';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 

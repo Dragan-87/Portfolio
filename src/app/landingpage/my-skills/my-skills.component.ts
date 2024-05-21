@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
-import { LinkService } from '../../shared/link.service';
+import { LinkService } from '../../../assets/services/link.service';
 
 @Component({
   selector: 'app-my-skills',

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { SocialMediaService } from '../social-media.service';
+import { SocialMediaService } from '../../../assets/services/social-media.service';
 
 @Component({
   selector: 'app-svg-icon',

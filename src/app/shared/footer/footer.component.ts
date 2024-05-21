@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SvgIconComponent } from '../svg-icon/svg-icon.component';
-import { SocialMediaService } from '../social-media.service';
+import { SocialMediaService } from '../../../assets/services/social-media.service';
 import { RouterModule } from '@angular/router';
 
 

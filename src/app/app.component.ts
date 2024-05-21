@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 import AOS from 'aos';
 
 @Component({
@@ -15,7 +16,7 @@ import AOS from 'aos';
 export class AppComponent {
   title = 'myPage';
   aos = AOS;
-  tablet: any;
+  translate;
 
   constructor() {
     this.aos.init({
@@ -37,7 +38,7 @@ export class AppComponent {
       mirror: true, // whether elements should animate out while scrolling past them
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
     });
-
+    this.translate = TranslateModule.forRoot();
   }
 
 }
