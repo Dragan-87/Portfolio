@@ -1,7 +1,5 @@
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from './../../../assets/services/translation.service';
 import { Component } from '@angular/core';
-
 
 @Component({
   selector: 'app-about-me',

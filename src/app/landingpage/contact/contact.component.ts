@@ -4,6 +4,7 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angula
 import { LinkService } from '../../../assets/services/link.service';
 import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     ReactiveFormsModule,
     RouterModule,
+    TranslateModule,
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss', './contac-responsive.scss']

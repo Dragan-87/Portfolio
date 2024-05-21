@@ -4,11 +4,10 @@
       <div class="divider-container">
         <div class="divider-small"></div>
       </div>
-      <span>Portfolio</span>
+      <span>{{"portfolio_title" | translate}}</span>
       <div class="divider-big"></div>
     </div>
-    <span class="section-description">Explore a selection of my work here - Interact with projects to see my skills in
-      action.</span>
+    <span class="section-description">{{"portfolio_text" | translate}}</span>
   </div>
   <div class="wrapper">
     @for(project of projects; track project.projectTitle; let index= $index){

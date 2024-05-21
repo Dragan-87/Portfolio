@@ -13,13 +13,13 @@ import { TranslationService } from '../../../assets/services/translation.service
 })
 export class PortfolioComponent {
   translate = Inject(TranslationService);
-  
+
   projects = [
     {
       projectImg: 'join',
       projectTitle: 'Join',
       techStack: 'JavaScript | HTML | CSS',
-      projectDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
+      projectDescription: 'portfolio_join_project_text',
       githubLink: 'https://github.com/Dragan-87/join',
       liveLink: 'http://join.dragan-saric.de/'
     },
@@ -27,7 +27,7 @@ export class PortfolioComponent {
       projectImg: 'el-pollo-loco',
       projectTitle: 'El Pollo Loco',
       techStack: 'JavaScript | HTML | CSS',
-      projectDescription: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.',
+      projectDescription: 'portfolio_el_pollo_loco_text',
       githubLink: 'https://github.com/Dragan-87/el-pollo-loco',
       liveLink: 'http://el-pollo-loco.dragan-saric.de/',
     },

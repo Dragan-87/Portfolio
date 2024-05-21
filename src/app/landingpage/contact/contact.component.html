@@ -1,18 +1,15 @@
 <div class="outer-container" id="contact">
   <div class="headline-container" data-aos="fade-right">
     <div class="divider-small"></div>
-    <span>Contact</span>
+    <span>{{"contact_title" | translate}}</span>
   </div>
 
   <div class="wrapper">
     <div class="contact-container" data-aos="fade-right">
       <div class="contact-section">
-        <span>Got a problem to solve?</span>
-        <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
-          your
-          projects
-          with my work.</span>
-        <span>Need a Frontend developer? <b>Contact me!</b></span>
+        <span>{{"contact_headline" | translate}}</span>
+        <span>{{"contact_text" | translate}}</span>
+        <span>{{"contact_text_2" | translate}} <b>{{"contact_text_2_bold_part" | translate}}</b></span>
       </div>
     </div>
 
@@ -20,28 +17,26 @@
       <form [formGroup]="contactObj" (ngSubmit)="onSubmit()">
         <div>
           <input [ngClass]="{'is-invalid': isNameInvalid(),'is-valid': isNameValidAndTouched()}" type="text"
-            formControlName="name" placeholder="Your name " required>
-          <span class="invalid" *ngIf="isNameInvalid()">Your name is required</span>
+            formControlName="name" placeholder="{{'contact_name_placeholder' | translate}}" required>
+          <span class="invalid" *ngIf="isNameInvalid()">{{"contact_name_invalid" | translate}}</span>
         </div>
         <div>
           <input [ngClass]="{'is-invalid': isEmailInvalid(),'is-valid': isEmailValidAndTouched()}" type="email"
-            formControlName="email" placeholder="Your email" required>
-          <span class="invalid" *ngIf="isEmailInvalid()">Your email is required</span>
+            formControlName="email" placeholder="{{'contact_email_placeholder' | translate}}" required>
+          <span class="invalid" *ngIf="isEmailInvalid()">{{"contact_email_invalid" | translate}}</span>
         </div>
         <div>
           <textarea [ngClass]="{'is-invalid': isMessageInvalid(),'is-valid': isMessageValidAndTouched()}" id="message"
-            formControlName="message" placeholder="Your message" required></textarea>
-          <span class="invalid" *ngIf="isMessageInvalid()">Your message is required</span>
+            formControlName="message" placeholder="{{'contact_message_placeholder' | translate}}" required></textarea>
+          <span class="invalid" *ngIf="isMessageInvalid()">{{"contact_message_invalid" | translate}}</span>
         </div>
         <div class="checkbox-container">
           <div>
             <input type="checkbox" formControlName="privacyPolicy"
               required>
-            <span>I've read the <a routerLink="privacy-policy" calss="highlitghting">privacy policy</a> and agree to the processing of my data
-              as
-              outlined.</span>
+            <span>{{"contact_privacy_policy_text" | translate}} <a routerLink="privacy-policy" calss="highlitghting">{{"privacy policy" | translate}}</a>{{"contact_privacy_policy_text_2" | translate}}</span>
           </div>
-          <span class="invalid" *ngIf="isPrivacyPolicyInvalid()">Please accept the privacy policy</span>
+          <span class="invalid" *ngIf="isPrivacyPolicyInvalid()">{{"contact_privacy_policy_invalid" | translate}}</span>
         </div>
         <button class="sub-btn" type="submit" [disabled]="contactObj.invalid">Send message
           :)</button>

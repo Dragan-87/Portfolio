@@ -3,7 +3,6 @@ import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
 import { SocialMediaService } from '../../../assets/services/social-media.service';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../../assets/services/translation.service';
 
 
 @Component({
