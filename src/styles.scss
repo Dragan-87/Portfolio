@@ -25,11 +25,9 @@ $media-query-eight: 390px;
 
 html {
   scroll-behavior: smooth;
-  z-index: 2;
-  background-color: darken($background, $amount: 3);
   color: $primary-font-color;
-  overflow-x: hidden;
   min-height: --webkit-fill-available;
+  overflow-x: hidden;
 
 }
 

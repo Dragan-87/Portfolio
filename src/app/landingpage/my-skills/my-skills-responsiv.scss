@@ -123,9 +123,9 @@
 
 }
 
-@media screen and (max-width: 420px) {
+@media(max-width: 420px) {
   .my-skills {
-    padding-top: calc($nav-bar-height + 50px);
+    padding: 122px 0 0 0;
   }
 
   .tech-stack {
