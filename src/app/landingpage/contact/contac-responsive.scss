@@ -85,11 +85,13 @@
 @media(max-width: 420px) {
   .outer-container {
     height: calc(100vh + 111px + 150px);
+    padding-bottom: 140px;
   }
 }
 
 @media(max-width: 375px) {
   .outer-container {
     height: calc(100vh + 111px + 250px);
+    padding-bottom: 140px;
   }
 }

@@ -34,7 +34,7 @@
           <div>
             <input type="checkbox" formControlName="privacyPolicy"
               required>
-            <span>{{"contact_privacy_policy_text" | translate}} <a routerLink="privacy-policy" calss="highlitghting">{{"privacy policy" | translate}}</a>{{"contact_privacy_policy_text_2" | translate}}</span>
+            <span>{{"contact_privacy_policy_text" | translate}} <a routerLink="privacy-policy" calss="highlitghting">{{"contact_privacy_policy_link" | translate}}</a>{{"contact_privacy_policy_text_2" | translate}}</span>
           </div>
           <span class="invalid" *ngIf="isPrivacyPolicyInvalid()">{{"contact_privacy_policy_invalid" | translate}}</span>
         </div>

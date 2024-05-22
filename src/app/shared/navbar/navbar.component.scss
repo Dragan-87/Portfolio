@@ -38,6 +38,24 @@ header {
   }
 }
 
+.translation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+  &:hover {
+    border: 1px solid $primary;
+    border-radius: 50%;
+  }
+}
+
+
+
+
 .name {
   font-size: 32px !important;
 }

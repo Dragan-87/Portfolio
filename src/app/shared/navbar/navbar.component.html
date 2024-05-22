@@ -9,9 +9,10 @@
       <a class="pointer" (click)="setIsClickedToTrue(); setPortfolioToTrue();" [ngClass]="portfolio? 'active' : ''"
         (click)="scrollTo('portfolio')">{{"nav_portfolio" | translate}}</a>
       <div class="translation">
-        <a class="pointer" (click)="translationService.switchLanguage('en-EN')">EN</a>
-        <span>|</span>
-        <a class="pointer" (click)="translationService.switchLanguage('de-DE')">DE</a>
+        <img src="assets/img/icons/menu-btn/en-btn.png" class="pointer flag-btn"
+          (click)="translationService.switchLanguage('en-EN')">
+        <img src="assets/img/icons/menu-btn/de-btn.png" class="pointer flag-btn"
+          (click)="translationService.switchLanguage('de-DE')">
       </div>
     </div>
     <div class="desktop-view pointer" (click)="openOrCloseBurgerMenu()">
@@ -23,10 +24,10 @@
           <a (click)="setSkillsToTrue()" href="#skills">{{"nav_skills" | translate}}</a>
           <a (click)="setPortfolioToTrue()" href="#portfolio">{{"nav_portfolio" | translate}}</a>
           <a href="#contact">{{"nav_contact" | translate}}</a>
-          <div class="translation">
-            <a href="#" (click)="translationService.switchLanguage('en-EN')">EN</a>
-            <a href="#" (click)="translationService.switchLanguage('de-DE')">DE</a>
-          </div>
+          <img src="assets/img/icons/menu-btn/en-btn.png" class="pointer flag-btn"
+            (click)="translationService.switchLanguage('en-EN')">
+          <img src="assets/img/icons/menu-btn/de-btn.png" class="pointer flag-btn"
+            (click)="translationService.switchLanguage('de-DE')">description
         </div>
       </div>
       } @else {

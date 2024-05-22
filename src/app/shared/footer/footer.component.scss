@@ -43,6 +43,7 @@ footer {
     flex-direction: column;
     @include flex(center, unset);
     gap: 30px;
+    align-items: center;
     > div:first-child {
       width: 235px;
     }

@@ -9,38 +9,41 @@
     justify-content: center !important;
     padding: 0;
     z-index: 10;
-  }
-
-  .about-me-description {
-    justify-content: center !important;
-
-  }
-}
-
-@media(max-width:640px) {
-
-  .description-content {
-    >span:first-child {
-      font-size: 45px !important;
+    >.about-me-description {
+      justify-content: center !important;
+      >.description-content {
+        max-width: none;
+        padding: 0 50px;
+        align-items: start;
+      }
     }
   }
-}
 
-@media(max-width:420px) {
-  .about-me {
-    padding-top: calc($nav-bar-height / 2);
-    padding: 0 25px;
 
+  @media(max-width:640px) {
+
+    .description-content {
+      >span:first-child {
+        font-size: 45px !important;
+      }
+    }
   }
 
-  .personal-info {
-    padding-left: 0 !important;
-  }
-}
+  @media(max-width:420px) {
+    .about-me {
+      padding: 10px 25px;
 
-@media(max-width:376px) {
-  .about-me {
-    padding: 100px 25px;
-    margin-bottom: 40px;
+    }
+
+    .personal-info {
+      padding-left: 0 !important;
+    }
+  }
+
+  @media(max-width:376px) {
+    .about-me {
+      padding: 100px 25px;
+      margin-bottom: 40px;
+    }
   }
 }

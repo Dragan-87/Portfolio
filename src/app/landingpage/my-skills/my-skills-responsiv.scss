@@ -51,7 +51,7 @@
 
 @media (max-width: 768px) {
   .my-skills {
-    padding: 171px, 0px 0 0;
+    padding-top: (122px - 48px);
 
     >.headline-section {
 
@@ -93,7 +93,7 @@
 
 @media (max-width: 630px) {
   .my-skills {
-    padding: 100px 0;
+    // padding: 100px 0;
     .headline-section {
 
       >span {
@@ -125,7 +125,7 @@
 
 @media(max-width: 420px) {
   .my-skills {
-    padding: 122px 0 0 0;
+    // padding: 122px 0 0 0;
   }
 
   .tech-stack {
