@@ -143,3 +143,9 @@ body {
     display: none !important;
   }
 }
+
+@media(max-width: 1920px) {
+  body {
+    overflow: hidden;
+  }
+}
