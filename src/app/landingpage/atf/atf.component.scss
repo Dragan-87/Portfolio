@@ -3,7 +3,7 @@
 .atf {
   height: calc(100lvh - $nav-bar-height);
   padding: 122px 100px 0 100px;
-  position: relative;
+  // position: relative;
   @include flex(space-between);
 
   >.img-container {
@@ -27,9 +27,10 @@
   }
 
   >.text-container {
-    position: absolute;
-    top: 300px;
-    right: 100px;
+    // position: absolute;
+    position: relative;
+    top: 200px;
+    left: 80px;
     z-index: 4;
     display: flex;
     flex-direction: column;
@@ -73,15 +74,17 @@
 
   >.social-media-container {
     position: absolute;
-    bottom: 50px;
-    left: 0;
+    top: 1000px;
+    left: calc(50% - 780px);
     @include flex(flex-start, center);
     gap: 40px;
     z-index: 3;
 
     >.divider {
+      position: absolute;
       border-bottom: 3px solid $tertiary;
-      width: 100px;
+      width: 100vw;
+      right: calc(100% + 40px);
     }
 
     >a:last-child {
@@ -95,8 +98,8 @@
   .vertical-wiggle {
     z-index: 3;
     position: absolute;
-    bottom: 15%;
-    right: 30px;
+    top: calc(50% + 300px);
+    left: calc(50% + 800px);
     @include flex(flex-start, center);
     rotate: 90deg;
     text-decoration: none;

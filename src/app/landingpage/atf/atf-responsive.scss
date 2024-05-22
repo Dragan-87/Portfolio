@@ -1,5 +1,26 @@
 @use '../../../styles.scss' as *;
 
+@media(max-width: 1920px) {
+  .atf {
+    position: relative;
+    >.text-container {
+      position: absolute;
+      left: unset;
+      top: 300px;
+      right: 100px;
+    }
+    >.social-media-container {
+      position: absolute;
+      left: 200px;
+    }
+    >.vertical-wiggle {
+      left: unset;
+      right: 30px;
+    }
+
+  }
+}
+
 @media(max-width: 1366px) {
   .atf {
 
@@ -59,9 +80,11 @@
     }
 
     >.social-media-container {
-      width: 100%;
+      width: 164px;
       @include flex(center, center);
       bottom: 24px;
+      top: unset;
+      left: calc(50% - 82px);
 
       >.divider {
         display: none;
@@ -122,8 +145,6 @@
       }
 
       >.social-media-container {
-        width: 100%;
-
         >a:last-child {
           display: none;
         }
