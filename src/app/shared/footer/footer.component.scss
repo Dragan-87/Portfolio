@@ -6,6 +6,7 @@ footer {
   @include flex(space-between, center);
   border-top: 4px solid $primary;
   padding: 0px 100px;
+  background-color: $background;
   > div:first-child {
     display: flex;
     flex-direction: column;

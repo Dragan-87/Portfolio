@@ -8,9 +8,11 @@
 
   >img:last-child {
     position: absolute;
-    z-index: 3;
-    width: 453px;
-    bottom: 0;
+    z-index: -1;
+    width: 629px;
+    bottom: -267px;
+    left: -230px;
+    rotate: 247deg;
   }
 }
 

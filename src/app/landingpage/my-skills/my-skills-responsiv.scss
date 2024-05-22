@@ -125,7 +125,7 @@
 
 @media(max-width: 420px) {
   .my-skills {
-    // padding: 122px 0 0 0;
+    padding: 122px 0 0 0;
   }
 
   .tech-stack {
@@ -133,4 +133,10 @@
     row-gap: 24px;
   }
 
+}
+
+@media(max-width: 376px) {
+  .my-skills {
+    padding-top: 170px;
+  }
 }

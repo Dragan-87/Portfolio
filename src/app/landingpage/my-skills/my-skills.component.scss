@@ -8,9 +8,10 @@
   >img {
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    height: 70%;
+    left: -400px;
+    
     z-index: 3;
+    rotate: 254deg;
   }
 
   >.skills-btn-mobile {
