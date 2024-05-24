@@ -30,12 +30,15 @@
         }
       }
 
-      >.divider-big {
-        border-bottom: 3px solid $tertiary;
-        min-width: 50px;
+      >.divider-big-container {
         width: 100%;
-        max-width: 951px;
+        >.divider-big {
+          border-bottom: 3px solid $tertiary;
+          min-width: 50px;
+          width: 100vw;
+          position: absolute;
 
+        }
       }
 
       >span {

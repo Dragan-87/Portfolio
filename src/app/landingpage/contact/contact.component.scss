@@ -1,6 +1,7 @@
 @use '../../../styles.scss' as *;
 
 .outer-container {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: calc(100vh + 111px);
@@ -21,11 +22,17 @@
   @include flex(unset, center);
   gap: 44px;
 
-  >.divider-small {
-    margin: 10px 0;
-    border: 2px solid $tertiary;
+  >.divider-container {
     width: 100%;
     max-width: 50px;
+
+    >.divider-small {
+      margin: 10px 0;
+      border: 2px solid $tertiary;
+      position: absolute;
+      width: 100vw;
+      right: calc(100% - 50px);
+    }
   }
 
   >span {

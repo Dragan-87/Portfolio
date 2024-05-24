@@ -1,6 +1,13 @@
 @use '../../../styles.scss' as *;
 
+.width-limiter {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
 .atf {
+  max-width: 1920px;
   height: calc(100lvh - $nav-bar-height);
   padding: 122px 100px 0 100px;
   // position: relative;
