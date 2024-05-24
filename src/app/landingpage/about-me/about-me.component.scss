@@ -2,7 +2,6 @@
 
 .about-me {
   z-index: 3;
-  position: relative;
   height: calc(100vh - $nav-bar-height);
   @include flex(flex-start, center);
   padding-left: 100px;
@@ -86,8 +85,9 @@
   }
 
   .divider {
-    background-color: $primary;
-    height: 4px;
-    width: 100%;
+    border: 2px solid $primary;
+    width: 5000px;
+    position: absolute;
+    left: calc(50% + 535px);
   }
 }

@@ -9,7 +9,7 @@
     position: absolute;
     bottom: 0px;
     left: -400px;
-    
+
     z-index: 3;
     rotate: 254deg;
   }
@@ -45,9 +45,12 @@
       font-weight: 700;
     }
 
-    >.divider {
-      width: 58px;
-      border-bottom: 3px solid $tertiary;
+    >.divider-container {
+      >.divider {
+        position: absolute;
+        width: 5000px;
+        border-bottom: 3px solid $tertiary;
+      }
     }
   }
 

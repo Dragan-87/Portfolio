@@ -1,5 +1,12 @@
 @use '../../../styles.scss' as *;
 
+@media(max-width: 1921px) {
+  .about-me {
+    position: relative;
+  }
+
+}
+
 @media(max-width: 1100px) {
   .about-profile {
     display: none !important;
