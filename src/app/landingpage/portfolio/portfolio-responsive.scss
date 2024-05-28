@@ -1,5 +1,26 @@
 @use '../../../styles.scss' as *;
 
+@media (max-width: 1920px) {
+  .portfolio-section {
+    position: relative;
+
+    >.headline-section {
+      >.headline {
+        >.divider-big-container {
+          >.divider-big {
+            border-bottom: 3px solid $tertiary;
+            min-width: 50px;
+            width: 100%;
+            position: unset;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
 @media (max-width: 1001px) {
   .wrapper {
     padding: 100px 50px 0 50px;

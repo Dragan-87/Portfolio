@@ -5,15 +5,15 @@
   display: flex;
   flex-direction: column;
   height: calc(100vh + 111px);
-  position: relative;
 
   >img:last-child {
     position: absolute;
     z-index: -1;
     width: 629px;
     bottom: -267px;
-    left: -230px;
+    left: calc(50% - 1254px);
     rotate: 247deg;
+    top: 464vh;
   }
 }
 
@@ -30,8 +30,9 @@
       margin: 10px 0;
       border: 2px solid $tertiary;
       position: absolute;
-      width: 100vw;
-      right: calc(100% - 50px);
+      left: 0;
+      width: calc(50% - 900px);
+
     }
   }
 

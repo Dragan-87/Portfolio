@@ -1,7 +1,6 @@
 @use '../../../styles.scss' as *;
 
 .portfolio-section {
-  position: relative;
   padding: 111px 0px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -35,8 +34,9 @@
         >.divider-big {
           border-bottom: 3px solid $tertiary;
           min-width: 50px;
-          width: 100vw;
+          width: calc(50% - 233px);
           position: absolute;
+          right: 0;
 
         }
       }

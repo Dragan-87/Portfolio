@@ -1,43 +1,49 @@
 @use '../../../styles.scss' as *;
 
-@media (max-width: 1100px) {
+@media(max-width: 1920px) {
   .outer-container {
-    padding: 0 100px 0 0;
-
+    position: relative;
 
     >.headline-container {
-      padding: 0;
+      >.divider-container {
+        >.divider-small {
+          margin: 10px 0;
+          border: 2px solid $tertiary;
+          position: unset;
+          width: 58px;
+          right: calc(100% - 50px);
+        }
+      }
     }
 
-    .wrapper {
-      flex-direction: column;
-      gap: 0;
-      height: 0;
-
-      >.form-container {
-        align-self: flex-start;
-        margin-top: 25px;
-        width: unset;
-        padding: 0 0 0 100px;
-        justify-content: center;
-      }
+    >img:last-child {
+      position: absolute;
+      z-index: -1;
+      width: 629px;
+      bottom: -267px;
+      left: -230px;
+      rotate: 247deg;
+      top: unset;
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .outer-container {
-    padding: 0 25px 0 0;
+    padding: 122px 0 0 0;
+
 
     >.headline-container {
       gap: 5px;
 
-      >span {
-        font-size: 45px;
-      }
 
-      >.divider-small {
-        max-width: 15px;
+
+      >.divider-container {
+        width: 24px;
+
+        >.divider-small {
+          width: 15px;
+        }
       }
     }
 
@@ -60,9 +66,57 @@
         position: relative;
         align-self: flex-start;
         margin-top: 25px;
-        width: unset;
         padding: 0 0 0 25px;
         justify-content: center;
+        width: 95%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .outer-container {
+    padding: 0 25px 0 0;
+
+    >.headline-container {
+      gap: 5px;
+
+      >span {
+        font-size: 45px;
+      }
+
+      >.divider-container {
+        width: 24px;
+
+        >.divider-small {
+          width: 10px;
+        }
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+      gap: 0;
+
+      >.contact-container {
+        >.contact-section {
+          padding: 0 0 0 25px;
+
+          >span:first-child {
+            font-size: 22px;
+
+          }
+        }
+      }
+
+      >.form-container {
+        position: relative;
+        align-self: flex-start;
+        margin-top: 25px;
+        padding: 0 25px 0 25px;
+        justify-content: center;
+        width: 95%;
       }
     }
 

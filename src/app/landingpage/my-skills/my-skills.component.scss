@@ -1,15 +1,13 @@
 @use '../../../styles.scss' as *;
 
 .my-skills {
-  position: relative;
   @include flex(space-between, unset);
   height: 100vh;
 
   >img {
     position: absolute;
-    bottom: 0px;
-    left: -400px;
-
+    top: 200vh;
+    left: calc(50% - 1300px);
     z-index: 3;
     rotate: 254deg;
   }
@@ -35,7 +33,6 @@
   >.headline {
     width: 100%;
     text-align: right;
-    position: relative;
     @include flex(unset, center);
     gap: 42px;
 
@@ -46,11 +43,18 @@
     }
 
     >.divider-container {
+      width: 58px;
+      display: flex;
+      align-items: center;
+
       >.divider {
         position: absolute;
-        width: 5000px;
+        right: 0;
+        width: calc(49% - 895px);
+        right: 0;
         border-bottom: 3px solid $tertiary;
       }
+
     }
   }
 

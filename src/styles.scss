@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth;
   color: $primary-font-color;
   min-height: --webkit-fill-available;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
 }
 

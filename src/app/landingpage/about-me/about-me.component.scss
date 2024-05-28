@@ -75,6 +75,8 @@
     height: 480px;
     border-radius: 50% 50%;
     border: 4px $primary solid;
+    z-index: 4;
+    background-color: $background;
 
     img {
       border-radius: 50% 50%;
@@ -83,10 +85,13 @@
     }
   }
 
-  .divider {
-    border: 2px solid $primary;
-    width: 5000px;
+
+  >.divider {
+    border: 2px solid #70E61C;
+    width: calc(49% - 52px);
     position: absolute;
-    left: calc(50% + 535px);
+
+    right: 0;
   }
+
 }
