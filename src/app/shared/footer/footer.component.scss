@@ -1,39 +1,58 @@
 @use '../../../styles.scss' as *;
 
 footer {
+  box-sizing: border-box;
+  padding: 0px 100px;
+  position: absolute;
+  left: 0;
   z-index: 4;
   height: 291px;
-  @include flex(space-between, center);
+  width: 100%;
   border-top: 4px solid $primary;
-  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+
   background-color: $background;
-  > div:first-child {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    > span:first-child {
-      font-size: 40px;
-      font-weight: 700;
-    }
-    > a {
-      text-decoration: none;
-      color: $primary-font-color;
-      display: inline-block;
 
-    }
-  }
-  > div:nth-child(2) {
-    font-size: 23px;
-  }
+  >.footer-container {
+    @include flex(space-between, center);
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
 
-  > div:last-child {
-    display: flex;
-    gap: 32px;
-    > img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 3px solid $primary;
+
+    >.imprint {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      >span:first-child {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      >a {
+        text-decoration: none;
+        color: $primary-font-color;
+        display: inline-block;
+
+      }
+    }
+
+    >.copy-r {
+      font-size: 23px;
+    }
+
+    >.social-media {
+      display: flex;
+      gap: 32px;
+
+      >img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid $primary;
+      }
     }
   }
 }
@@ -41,18 +60,24 @@ footer {
 @media (max-width: 1001px) {
   footer {
     padding: 0px 50px;
-    flex-direction: column;
-    @include flex(center, unset);
-    gap: 30px;
-    align-items: center;
-    > div:first-child {
-      width: 235px;
-    }
-    > div:nth-child(2) {
-      width: 236px
-    }
-    > div:last-child {
-      width: 235px;
+
+    >.footer-container {
+      flex-direction: column;
+      @include flex(center, unset);
+      gap: 30px;
+      align-items: center;
+
+      >.imprint {
+        width: 235px;
+      }
+
+      >.copy-r {
+        width: 236px
+      }
+
+      >.social-media {
+        width: 235px;
+      }
     }
 
   }

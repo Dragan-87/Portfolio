@@ -57,12 +57,13 @@
       top: calc(50% - 420px);
 
       >.hero {
-        width: 540px;
-        top: calc(50% + 67px);
-        left: calc(50% - 270px);
+        width: 440px;
+        top: calc(50% + 167px);
+        left: calc(50% - 220px);
       }
 
       >img:last-child {
+        top: calc(50% - -150px);
         left: calc(50% - 400px);
         width: 800px;
       }

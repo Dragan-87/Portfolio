@@ -25,6 +25,8 @@
   >.divider-container {
     width: 100%;
     max-width: 50px;
+    display: flex;
+    align-items: center;
 
     >.divider-small {
       margin: 10px 0;
@@ -118,7 +120,7 @@
           }
 
           &::placeholder {
-
+            font-family: "Poppins", sans-serif;
             color: $primary-font-color !important;
           }
 

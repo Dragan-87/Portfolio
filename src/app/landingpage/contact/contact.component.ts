@@ -27,7 +27,8 @@ export class ContactComponent {
   constructor(private http: HttpClient) {
     this.contactObj = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50), Validators.pattern('^[a-zA-ZäöüÄÖÜß ]*$')]),
-      email: new FormControl('', [Validators.required, Validators.email, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$')]),
+      email: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9._%+\\-ÄÖÜäöüß]+@[a-zA-Z0-9.\\-ÄÖÜäöüß]+\\.[a-zA-Z]{2,}$')
+]),
       message: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(5000), Validators.pattern('^[a-zA-Z0-9.,!?äöüÄÖÜß#(): ]*$')]),
       privacyPolicy: new FormControl(false, [Validators.requiredTrue])
     });

@@ -1,17 +1,19 @@
 <footer>
-  <div>
-    <span>Dragan</span>
-    <a routerLink="imprint" >{{"imprint" | translate}}</a>
-  </div>
-  <div>
-    <span>&#169; Dragan Saric {{year()}}</span>
-  </div>
-  <div>
-      @for(count of socialMedia; track count; let i = $index ) {
-      <a [href]="count.link" class="flex-center" [attr.target]="i % 2 === 0? '_blank' : ''">
-        <app-svg-icon class="small-icon pointer" [width]="'42'" [height]="'41'" [path]="count.path"
-          [id]="count.id"></app-svg-icon>
-      </a>
-      }
+  <div class="footer-container">
+    <div class="imprint">
+      <span>Dragan</span>
+      <a routerLink="imprint" >{{"imprint" | translate}}</a>
+    </div>
+    <div class="copy-r">
+      <span>&#169; Dragan Saric {{year()}}</span>
+    </div>
+    <div class="social-media">
+        @for(count of socialMedia; track count; let i = $index ) {
+        <a [href]="count.link" class="flex-center" [attr.target]="i % 2 === 0? '_blank' : ''">
+          <app-svg-icon class="small-icon pointer" [width]="'42'" [height]="'41'" [path]="count.path"
+            [id]="count.id"></app-svg-icon>
+        </a>
+        }
+    </div>
   </div>
 </footer>

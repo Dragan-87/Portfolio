@@ -31,6 +31,7 @@
 
       >.divider-big-container {
         width: 100%;
+
         >.divider-big {
           border-bottom: 3px solid $tertiary;
           min-width: 50px;
@@ -61,7 +62,8 @@
   position: absolute;
   z-index: 1;
   transform: rotate(180deg);
-  left: -140px;
+  top: 300vh;
+  width: calc(50% - 200px);
   bottom: 20%;
   height: 748px;
   width: 648px;
@@ -69,12 +71,14 @@
 
 .green-blur {
   position: absolute;
-  z-index: 3;
+  z-index: -1;
   transform: rotate(180deg);
-  right: -400px;
+  left: calc(50% - 19px);
   bottom: 0;
+  top: 310vh;
   rotate: 264deg;
 }
+
 
 .wrapper {
   margin-top: 116px;

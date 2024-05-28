@@ -17,6 +17,19 @@
         }
       }
     }
+
+    >.green-blur {
+      z-index: 3;
+      transform: rotate(180deg);
+      right: -400px;
+      bottom: 0;
+      rotate: 264deg;
+      top: 600px;
+    }
+    >.prup-blur {
+      top: unset;
+      left: -150px;
+    }
   }
 
 }

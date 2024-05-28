@@ -11,7 +11,7 @@
   height: calc(100lvh - $nav-bar-height);
   padding: 122px 100px 0 100px;
   // position: relative;
-  @include flex(space-between);
+  @include flex(space-between);;
 
   >.img-container {
     position: relative;
@@ -125,9 +125,8 @@
   >img:last-child {
     position: absolute;
     top: calc(100% - $nav-bar-height);
-    right: -330px;
     max-width: 100%;
-    object-fit: cover;
+    left: calc(50% - -60px);
     z-index: 2;
   }
 

@@ -1,7 +1,7 @@
 @use '../../styles.scss' as *;
 .impressum {
-  padding: 150px 100px;
-  height: 100vh;
+  padding: 150px 100px 0 100px;
+  height: fit-content;
   font-family: 'Poppins', sans-serif;}
 
 @media(max-width: 1077px) {
