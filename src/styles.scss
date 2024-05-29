@@ -16,19 +16,30 @@ $normal-font-size: 16px;
 $small-font-size: 14px;
 $media-query-one: 1310px;
 $media-query-two: 1001px;
-$media-query-three: 900px;
-$media-query-four: 768px;
-$media-query-five: 600px;
-$media-query-six: 480px;
-$media-query-seven: 400px;
-$media-query-eight: 390px;
+$scrollbar-background-color: #1E293D;
+$scrollbar-thumb-color: #9747FF;
+
+/* Rest of the code */
 
 html {
   scroll-behavior: smooth;
   color: $primary-font-color;
   min-height: --webkit-fill-available;
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  scrollbar-color: $scrollbar-thumb-color $scrollbar-background-color;
+}
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $scrollbar-background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb-color;
 }
 
 body {
@@ -143,7 +154,9 @@ body {
 }
 
 @media(max-width: 1920px) {
-  html,body {
+
+  html,
+  body {
     overflow-x: hidden;
   }
 }

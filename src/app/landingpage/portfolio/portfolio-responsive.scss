@@ -42,11 +42,12 @@
   }
 
   .prup-blur {
-    top: 200px;
+    top: 200px !important;
   }
 
   .green-blur {
     bottom: 200px;
+    top: 0;
   }
 
 }

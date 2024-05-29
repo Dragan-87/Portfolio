@@ -58,7 +58,7 @@
     }
     > span:nth-child(3) {
       margin-top: 20px;
-      font-size: 16px;
+      font-size: $normal-font-size;
       color: $primary-font-color;
     }
   }
@@ -113,7 +113,7 @@
         font-size: 18px;
       }
       >span:nth-child(3) {
-        font-size: 14px;
+        font-size: $small-font-size;
       }
     }
     >.project-description {

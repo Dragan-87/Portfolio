@@ -2,7 +2,7 @@
 
 .about-me {
   z-index: 3;
-  height: calc(100vh - $nav-bar-height);
+  height: calc(100vh + $nav-bar-height);
   @include flex(flex-start, center);
   padding-left: 100px;
 
@@ -23,14 +23,14 @@
       z-index: 6;
 
       span:first-child {
-        font-size: 90px;
+        font-size: $headline-font-size;
         font-weight: 700;
         text-wrap: nowrap;
         margin-bottom: 35px;
       }
 
       span {
-        font-size: 16px;
+        font-size: $normal-font-size;
         line-height: 19.2px;
       }
 

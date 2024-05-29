@@ -12,7 +12,7 @@
 
         >.divider-container {
           >.divider {
-            width: 58px;
+            width: 40px;
           }
         }
       }
@@ -89,7 +89,7 @@
 
   @media (max-width: 768px) {
     .my-skills {
-      padding-top: (122px - 48px);
+      padding-top: ($nav-bar-height - 48px);
 
       >.headline-section {
 
@@ -141,12 +141,12 @@
       .headline-section {
 
         >span {
-          font-size: 16px;
+          font-size: $normal-font-size;
         }
 
         >a {
           margin-top: 20px;
-          font-size: 16px;
+          font-size: $normal-font-size;
         }
       }
     }
@@ -169,7 +169,7 @@
 
   @media(max-width: 420px) {
     .my-skills {
-      padding: 122px 0 0 0;
+      padding: $nav-bar-height 0 0 0;
     }
 
     .tech-stack {
